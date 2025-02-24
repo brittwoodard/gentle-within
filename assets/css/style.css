@@ -551,6 +551,18 @@ p:last-child {
 .top-\[25\%\] {
   top: 25%;
 }
+.bottom-\[10\%\] {
+  bottom: 10%;
+}
+.right-\[10\%\] {
+  right: 10%;
+}
+.bottom-\[20\%\] {
+  bottom: 20%;
+}
+.right-\[15\%\] {
+  right: 15%;
+}
 .z-10 {
   z-index: 10;
 }
@@ -599,6 +611,12 @@ p:last-child {
 .mt-4 {
   margin-top: 1rem;
 }
+.ml-10 {
+  margin-left: 2.5rem;
+}
+.ml-20 {
+  margin-left: 5rem;
+}
 .block {
   display: block;
 }
@@ -628,6 +646,12 @@ p:last-child {
 }
 .min-h-\[80vh\] {
   min-height: 80vh;
+}
+.min-h-\[70vh\] {
+  min-height: 70vh;
+}
+.min-h-\[40vh\] {
+  min-height: 40vh;
 }
 .w-40 {
   width: 10rem;
@@ -712,6 +736,10 @@ p:last-child {
   --tw-bg-opacity: 1;
   background-color: rgb(207 209 198 / var(--tw-bg-opacity));
 }
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(102 118 108 / var(--tw-bg-opacity));
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -770,6 +798,10 @@ p:last-child {
 .text-dark {
   --tw-text-opacity: 1;
   color: rgb(102 118 108 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 

@@ -64,10 +64,14 @@ services:
      url: 
      featured_image: /uploads/temporary.jpg
 testimonials: 
- - testimonial_html: |
-     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
-     <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
-   author: Mary Jane
+  testimonials: 
+   - testimonial_html: |
+       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+       <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+     author: Mary Jane
+  background-image: 
+    image_path: 
+    image_focus: 
 cta: 
   heading: Inviting Call To Action
   description_html: |
@@ -190,11 +194,11 @@ seo:
 
 
 <!-- Testimonials Section -->
-<section>
+<section class="bg-dark text-white py-10p px-20 bg-image-style" style="background-image: url('{{ page.testimonials.background-image.image_path }}'); background-position: {{ page.testimonials.background-image.image_focus }};">
   <div class="testimonial-container">
-    {% for item in page.testimonials %}
-    <div class="testimonial-item">
-        <p class="text-center"><em>"{{ item.testimonial_html }}"</em></p>
+    {% for item in page.testimonials.testimonials %}
+    <div class="testimonial-item text-center w-[80%] mx-auto">
+        <p class="text-center"><em>{{ item.testimonial_html }}</em></p>
         <p class="text-right">{{ item.author }}</p>
     </div>
     {% endfor %}
@@ -203,22 +207,23 @@ seo:
 
 
 <!-- Call to Action -->
-<section class="grid grid-cols-4 relative">
+<section class="relative grid grid-cols-4">
 
   <!-- Left Column / Text -->
-  <div class="col-span-3">
-    <h2>{{ page.cta.heading }}</h2>
-    <div>
-      {{ page.cta.description_html | markdownify }}
+  <div class="col-span-3 flex items-center">
+    <div class="ml-20">
+      <h2 class="font-serif text-dark text-2xl">{{ page.cta.heading }}</h2>
+      <div class="w-[80%]">
+        {{ page.cta.description_html | markdownify }}
+      </div>
+      <a class="button" href="{{ page.cta.button.url }}">{{ page.cta.button.text }}</a>
     </div>
-    <a class="button" href="{{ page.cta.button.url }}">{{ page.cta.button.text }}</a>
   </div>
 
   <!-- Right Column / Image -->
-  <div class="bg-image-style" style="background-image: url('{{ page.cta.images.background-image.image_path }}'); background-position: {{ page.cta.images.background-image.image_path }};"></div>
+  <div class="bg-image-style min-h-[70vh]" style="background-image: url('{{ page.cta.images.background-image.image_path }}'); background-position: {{ page.cta.images.background-image.image_path }};"></div>
 
   <!-- Floating Image -->
-  <div class="absolute bottom-24 right-24 z-10">
-    <img src="{{ page.cta.images.featured-image.image_path }}" alt="{{ page.cta.images.featured-image.image_description }}" class="w-40 h-auto">
-  </div>
+  <div class="absolute bottom-[20%] right-[15%] z-10 bg-image-style aspect-square min-h-[40vh]" style="background-image: url('{{ page.cta.images.featured-image.image_path }}');"></div>
+
 </section>

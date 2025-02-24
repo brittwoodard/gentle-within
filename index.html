@@ -167,19 +167,19 @@ seo:
 
 
 <!-- Work with Me Section -->
-<section>
-  <div>
-    <h2>{{ page.services.heading_html }}</h2>
-    <div>
+<section class="bg-light py-10p px-20">
+  <div class="text-center">
+    <h2 class="font-serif text-dark text-2xl">{{ page.services.heading_html }}</h2>
+    <div class="mb-12 w-[80%] mx-auto">
       {{ page.services.description_html | markdownify }}
     </div>
   </div>
 
-  <div class="flex justify-between">
+  <div class="grid grid-cols-3">
     {% for item in page.services.services %}
-    <div>
-      <div class="bg-image-style min-h-[30vh]" style="background-image: url('{{ item.featured_image }}');"></div>
-      <h3>{{ item.title }}</h3>
+    <div class="text-center px-12">
+      <div class="bg-image-style aspect-square min-h-[30vh] mb-8" style="background-image: url('{{ item.featured_image }}');"></div>
+      <h3 class="font-serif text-dark text-lg">{{ item.title }}</h3>
       <p>{{ item.description }}</p>
       <a class="link" href="{{ item.url }}">Learn More</a>
     </div>

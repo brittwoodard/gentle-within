@@ -50,6 +50,14 @@ font-family: ibarra-real-nova, serif; 400, 700
         @apply bg-feature/75 transition duration-500
     }
 
+    .link {
+        @apply lowercase mb-2 border-b border-feature text-feature
+    }
+
+    .link:hover {
+        @apply text-feature/65 border-feature/65 transition duration-500
+    }
+
     /* Images */
     .bg-image-style {
         @apply bg-cover bg-no-repeat bg-center

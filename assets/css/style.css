@@ -490,6 +490,24 @@ p:last-child {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
 }
+.link {
+  margin-bottom: 0.5rem;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(179 123 100 / var(--tw-border-opacity));
+  text-transform: lowercase;
+  --tw-text-opacity: 1;
+  color: rgb(179 123 100 / var(--tw-text-opacity));
+}
+.link:hover {
+  border-color: rgb(179 123 100 / 0.65);
+  color: rgb(179 123 100 / 0.65);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
 /* Images */
 .bg-image-style {
   background-size: cover;
@@ -581,9 +599,6 @@ p:last-child {
 .mt-4 {
   margin-top: 1rem;
 }
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
 .block {
   display: block;
 }
@@ -595,6 +610,9 @@ p:last-child {
 }
 .hidden {
   display: none;
+}
+.aspect-square {
+  aspect-ratio: 1 / 1;
 }
 .h-\[60vh\] {
   height: 60vh;
@@ -699,6 +717,10 @@ p:last-child {
 }
 .p-5p {
   padding: 5%;
+}
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .px-2 {
   padding-left: 0.5rem;

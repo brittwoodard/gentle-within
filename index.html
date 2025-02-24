@@ -30,6 +30,18 @@ approaches:
    description: Modify distorted throughs and beliefs related to trauma
  - title: Dialectical Behavior Therapy (Dbt)
    description: Intense emotions, devleoping healthier coping strategies, and improving interpersonal relationships
+about: 
+  heading: Meet Amy
+  subtitle: Licensed therapist in New York
+  description_html: |
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  button: 
+    text: About Amy
+    url: /about
+  image: 
+    image_path: /uploads/temporary.jpg
+    image_description: Image Description
 seo:
   title: Gentle Within
   description: 
@@ -94,9 +106,29 @@ seo:
   <div>
   {% for item in page.approaches %}
     <div>
-      <h3>{{item.title}}</h3>
-      <p>{{item.description}}</p>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
     </div>
   {% endfor %}
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section class="grid grid-cols-2">
+
+  <!-- Left Column / Text -->
+  <div>
+    <h2>{{ page.about.heading }}</h2>
+    <p>{{ page.about.subtitle }}</p>
+    <div>
+      {{ page.about.description_html | markdownify }}
+    </div>
+    <a class="button" href="{{ page.about.button.url }}">{{ page.about.button.text }}</a>
+  </div>
+
+  <!-- Right Column / Image -->
+  <div>
+    <img src="{{ page.about.image.image_path }}" alt="{{ page.about.image.image_description }}">
   </div>
 </section>

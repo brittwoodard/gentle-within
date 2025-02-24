@@ -12,9 +12,10 @@ header:
       image_focus: left
     featured-image: 
       image_path: /uploads/temporary.jpg
-      image_focus:  
+      image_focus:
+      image_description: 
 seo:
-  title: This should appear in the browser tab
+  title: Gentle Within
   description:
   keywords:
   social_image:
@@ -44,6 +45,11 @@ seo:
       <p>{{page.header.subtitle}}</p>
       <a class="button" href="{{page.header.button.url}}">{{page.header.button.text}}</a>
     </div>
+  </div>
+
+  <!-- Floating Image -->
+  <div class="absolute top-24 right-24 z-10">
+    <img src="{{page.header.images.featured-image.image_path}}" alt="{{page.header.images.featured-image.image_description}}" class="w-40 h-auto">
   </div>
 
 </section>

@@ -572,6 +572,9 @@ nav a:hover {
 .mt-4 {
   margin-top: 1rem;
 }
+.mb-12 {
+  margin-bottom: 3rem;
+}
 .block {
   display: block;
 }
@@ -647,6 +650,12 @@ nav a:hover {
 .gap-4 {
   gap: 1rem;
 }
+.gap-12 {
+  gap: 3rem;
+}
+.gap-20 {
+  gap: 5rem;
+}
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -697,6 +706,10 @@ nav a:hover {
   padding-top: 10%;
   padding-bottom: 10%;
 }
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 .text-center {
   text-align: center;
 }
@@ -723,6 +736,12 @@ nav a:hover {
 .capitalize {
   text-transform: capitalize;
 }
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
 .text-dark {
   --tw-text-opacity: 1;
   color: rgb(102 118 108 / var(--tw-text-opacity));
@@ -733,6 +752,10 @@ nav a:hover {
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
+
+.last\:mb-0:last-child {
+  margin-bottom: 0px;
+}
 
 .hover\:text-gray-400:hover {
   --tw-text-opacity: 1;

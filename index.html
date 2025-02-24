@@ -21,15 +21,19 @@ who-you-serve:
   button:
     text: Book a Discovery Call
     url:     
-approaches: 
- - title: Mental Health Therapy & Psychotherapy
-   description: explore deep-seated emotions and behaviors
- - title: Trauma-Focused Cognitive Behavioral Thearpy (Tf-Cbt)
-   description: Heal from past trauma
- - title: Cognitive Processing Thearpy (Cpt)
-   description: Modify distorted throughs and beliefs related to trauma
- - title: Dialectical Behavior Therapy (Dbt)
-   description: Intense emotions, devleoping healthier coping strategies, and improving interpersonal relationships
+approach:
+  image: 
+    image_path: /uploads/temporary.jpg
+    image_focus: 
+  approaches: 
+   - title: Mental Health Therapy & Psychotherapy
+     description: explore deep-seated emotions and behaviors
+   - title: Trauma-Focused Cognitive Behavioral Thearpy (Tf-Cbt)
+     description: Heal from past trauma
+   - title: Cognitive Processing Thearpy (Cpt)
+     description: Modify distorted throughs and beliefs related to trauma
+   - title: Dialectical Behavior Therapy (Dbt)
+     description: Intense emotions, devleoping healthier coping strategies, and improving interpersonal relationships
 about: 
   heading: Meet Amy
   subtitle: Licensed therapist in New York
@@ -111,7 +115,7 @@ seo:
 
 
 <!-- Who You Serve -->
-<section class="bg-light py-10p px-12">
+<section class="bg-light py-10p px-20">
   <div class="text-center w-[80%] mx-auto">
     <h2 class="font-serif text-dark text-2xl capitalize mb-4">{{ page.who-you-serve.heading_html }}</h2>
     <div class="mb-4">
@@ -123,17 +127,17 @@ seo:
 
 
 <!-- Healing Approaches -->
-<section class="grid grid-cols-2">
+<section class="grid grid-cols-2 gap-20 py-10p px-20">
 
   <!-- Left Column / Image -->
-  <div class="bg-image-style"></div>
+  <div class="bg-image-style" style="background-image: url('{{ page.approach.image.image_path }}'); background-position: {{ page.approach.image.image_focus }};"></div>
 
   <!-- Right Column / Text -->
   <div>
-  {% for item in page.approaches %}
-    <div>
-      <h3>{{ item.title }}</h3>
-      <p>{{ item.description }}</p>
+  {% for item in page.approach.approaches %}
+    <div class="border-b border-dark mb-12 last:mb-0">
+      <h3 class="font-serif text-dark text-lg tracking-wide">{{ item.title }}</h3>
+      <p class="mb-4">{{ item.description }}</p>
     </div>
   {% endfor %}
   </div>

@@ -1,0 +1,37 @@
+<!-- Site Footer -->
+<footer class="grid grid-cols-3">
+
+    <!-- Left Column / Footer Navigation -->
+    <div class="col-span-2 grid grid-cols-2 gap-4">
+
+        <!-- Services -->
+        <div>
+            <nav class="space-y-2">
+                {% for item in site.data.navigation.footer.services %}
+                <a href="{{ item.url }}" class="block hover:text-gray-400">{{ item.title }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+
+        <!-- Key Pages -->
+        <div>
+            <nav class="space-y-2">
+                {% for item in site.data.navigation.footer.pages %}
+                <a href="{{ item.url }}" class="block hover:text-gray-400">{{ item.title }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+
+    </div>
+
+    <!-- Right Column / Socials -->
+    <div class="col-span-1">
+        <p>Gentle Within</p>
+        <div class="flex space-x-4">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+    </div>
+
+</footer>

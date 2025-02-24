@@ -1,3 +1,9 @@
+/* Fonts
+font-family: europa, sans-serif; 300, 400, 700
+font-family: ibarra-real-nova, serif; 400, 700
+ */
+
+
 /* ----------- Import Tailwind -----*/
 @tailwind base;
 @tailwind components;
@@ -13,7 +19,11 @@
     }
 
     body {
-        @apply font-sans font-light text-dark bg-light antialiased
+        @apply font-sans font-light text-x-dark antialiased
+    }
+
+    nav a:hover {
+        @apply text-feature transition duration-500
     }
 
 }

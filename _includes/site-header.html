@@ -1,0 +1,9 @@
+<!-- Site Header -->
+<section class="bg-image-style py-8 border-b border-dark text-center" style="background-image: url('#');">
+    <a class="font-serif text-dark text-2xl" href="/index.html">Gentle Within</a>
+    <nav>
+        {% for item in site.data.navigation.header %}
+        <a href="{{ item.url }}" class="px-2 mx-2">{{ item.title }}</a>
+        {% endfor %}
+    </nav>
+</section>

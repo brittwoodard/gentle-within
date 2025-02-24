@@ -542,6 +542,14 @@ body {
 .p-5p {
   padding: 5%;
 }
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 .text-center {
   text-align: center;
 }
@@ -566,5 +574,12 @@ body {
 @media (min-width: 768px) {
   .md\:w-\[40\%\] {
     width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }

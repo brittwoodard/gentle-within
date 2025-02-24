@@ -1,14 +1,18 @@
 header:
   - title: Home
-    url: /homepage
+    url: /index
   - title: About
     url: /about  
   - title: Contact
     url: /contact
+  - title: Book a Discovery Call
+    url: /discover
 footer:
   - title: Home
-    url: /homepage
+    url: /index
   - title: About
     url: /about  
   - title: Contact
     url: /contact
+  - title: Book a Discovery Call
+    url: /discover

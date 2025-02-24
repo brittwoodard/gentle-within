@@ -5,7 +5,15 @@ seo:
   description:
   keywords:
   social_image:
-  hide-from-google: false
+  hide-from-google: true
 ---
 
-<p class="bg-yellow-400"> This is some text on the homepage...and a test </p>
+<!-- Site Header -->
+<section>
+  <p>Gentle Within</p>
+  <nav>
+  {% for item in site.data.navigation.header %}
+    <a href="{{item.url}}" class="py-1 px-8 lg:px-16">{{item.title}}</a>
+  {% endfor %}
+  </nav>
+</section>

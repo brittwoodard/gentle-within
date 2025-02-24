@@ -90,24 +90,24 @@ seo:
 
 
 <!-- Hero Banner -->
-<section class="grid grid-cols-3">
+<section class="grid grid-cols-2">
 
-  <!-- Image / Left Column -->
-  <div class="bg-image-style min-h-[80vh]" style="background-image: url('{{ page.header.images.background-image.image_path }}'); background-position: {{ page.header.images.background-image.image_focus }};"></div>
+  <div class="grid grid-cols-2">
+    <!-- Image / Left Column -->
+    <div class="relative bg-image-style min-h-[80vh]" style="background-image: url('{{ page.header.images.background-image.image_path }}'); background-position: {{ page.header.images.background-image.image_focus }};"></div>
+  </div>
 
   <!-- Right Column -->
-  <div class="col-span-2">
-    <div>
-      <h1>{{ page.header.title }}</h1>
-      <p>{{ page.header.subtitle }}</p>
+  <div class="mr-12 flex items-center">
+    <div class="w-[60%]">
+      <h1 class="font-serif text-dark text-2xl">{{ page.header.title }}</h1>
+      <p class="text-[1.2rem]">{{ page.header.subtitle }}</p>
       <a class="button" href="{{ page.header.button.url }}">{{ page.header.button.text }}</a>
     </div>
   </div>
 
   <!-- Floating Image -->
-  <div class="absolute top-24 right-24 z-10">
-    <img src="{{ page.header.images.featured-image.image_path }}" alt="{{ page.header.images.featured-image.image_description }}" class="w-40 h-auto">
-  </div>
+  <div class="bg-image-style absolute top-[25%] left-[18%] z-10 h-[60vh] w-[25vw] rounded-t-[15rem]" style="background-image: url('{{ page.header.images.featured-image.image_path }}');"></div>
 
 </section>
 
@@ -199,7 +199,7 @@ seo:
 
 
 <!-- Call to Action -->
-<section class="grid grid-cols-4">
+<section class="grid grid-cols-4 relative">
 
   <!-- Left Column / Text -->
   <div class="col-span-3">

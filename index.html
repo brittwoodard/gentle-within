@@ -42,6 +42,23 @@ about:
   image: 
     image_path: /uploads/temporary.jpg
     image_description: Image Description
+services: 
+  heading_html: "Work <em>With Me</em>"
+  description_html: |
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+  services: 
+   - title: One to One Therapy
+     description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+     url: 
+     featured_image: /uploads/temporary.jpg
+   - title: Community Support Groups
+     description: Break the cycle of depression and addressing the effects of domestic violence
+     url: 
+     featured_image: /uploads/temporary.jpg
+   - title: Coures for Msw Students
+     description: Succeed in your LMSW and LCSW exams
+     url: 
+     featured_image: /uploads/temporary.jpg
 seo:
   title: Gentle Within
   description: 
@@ -130,5 +147,28 @@ seo:
   <!-- Right Column / Image -->
   <div>
     <img src="{{ page.about.image.image_path }}" alt="{{ page.about.image.image_description }}">
+  </div>
+</section>
+
+
+<!-- Work with Me Section -->
+<section>
+  <div>
+    <h2>{{ page.services.heading_html }}</h2>
+    <div>
+      {{ page.services.description_html | markdownify }}
+    </div>
+  </div>
+
+  <div class="flex justify-between">
+    {% for item in page.services.services %}
+    <div>
+      <div class="bg-image-style min-h-[30vh]" style="background-image: url('{{ item.featured_image }}');"></div>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <a class="link" href="{{ item.url }}">Learn More</a>
+    </div>
+    {% endfor %}
+
   </div>
 </section>

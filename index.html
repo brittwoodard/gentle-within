@@ -59,6 +59,11 @@ services:
      description: Succeed in your LMSW and LCSW exams
      url: 
      featured_image: /uploads/temporary.jpg
+testimonials: 
+ - testimonial_html: |
+     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+     <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+   author: Mary Jane
 seo:
   title: Gentle Within
   description: 
@@ -170,5 +175,18 @@ seo:
     </div>
     {% endfor %}
 
+  </div>
+</section>
+
+
+<!-- Testimonials Section -->
+<section>
+  <div class="testimonial-container">
+    {% for item in page.testimonials %}
+    <div class="testimonial-item">
+        <p class="text-center"><em>"{{item.testimonial_html}}"</em></p>
+        <p class="text-right">{{item.author}}</p>
+    </div>
+    {% endfor %}
   </div>
 </section>

@@ -553,6 +553,10 @@ nav a:hover {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -606,6 +610,9 @@ nav a:hover {
 }
 .w-full {
   width: 100%;
+}
+.w-\[80\%\] {
+  width: 80%;
 }
 .flex-grow {
   flex-grow: 1;
@@ -682,6 +689,14 @@ nav a:hover {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.py-10p {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
 .text-center {
   text-align: center;
 }
@@ -701,6 +716,12 @@ nav a:hover {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
 }
 .text-dark {
   --tw-text-opacity: 1;

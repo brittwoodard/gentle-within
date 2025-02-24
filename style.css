@@ -26,6 +26,10 @@ font-family: ibarra-real-nova, serif; 400, 700
         @apply text-feature transition duration-500
     }
 
+    footer nav a {
+        @apply font-serif text-dark
+    }
+
     p {
         @apply mb-4
     }
@@ -56,6 +60,10 @@ font-family: ibarra-real-nova, serif; 400, 700
 
     .link:hover {
         @apply text-feature/65 border-feature/65 transition duration-500
+    }
+
+    .fa-brands {
+        @apply text-xl
     }
 
     /* Images */

@@ -1,5 +1,5 @@
 <!-- Site Footer -->
-<footer class="grid grid-cols-3">
+<footer class="grid grid-cols-3 bg-main py-12 px-20">
 
     <!-- Left Column / Footer Navigation -->
     <div class="col-span-2 grid grid-cols-2 gap-4">
@@ -25,12 +25,16 @@
     </div>
 
     <!-- Right Column / Socials -->
-    <div class="col-span-1">
-        <p>Gentle Within</p>
-        <div class="flex space-x-4">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
+    <div class="col-span-1 text-dark text-right">
+        <a class="font-serif text-2xl" href="/index.html">Gentle Within</a>
+        
+        <div class="flex space-x-4 justify-end">
+            
+            <a href="https://www.facebook.com/{{ site.data.site-settings.social.facebook_username }}/"><i class="fa-brands fa-facebook"></i></a>
+
+            <a href="https://www.instagram.com/{{ site.data.site-settings.social.instagram_username }}/"><i class="fa-brands fa-instagram"></i></a>
+
+            <a href="https://www.linkedin.com/company/{{ site.data.site-settings.social.linkedin_username }}/"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
     </div>
 

@@ -26,6 +26,14 @@ font-family: ibarra-real-nova, serif; 400, 700
         @apply text-feature transition duration-500
     }
 
+    p {
+        @apply mb-4
+    }
+
+    p:last-child {
+        @apply mb-0
+    }
+
 }
 
 

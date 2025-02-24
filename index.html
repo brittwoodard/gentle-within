@@ -145,16 +145,18 @@ seo:
 
 
 <!-- About Section -->
-<section class="grid grid-cols-2">
+<section class="grid grid-cols-2 gap-20 bg-main py-10p px-20">
 
   <!-- Left Column / Text -->
-  <div>
-    <h2>{{ page.about.heading }}</h2>
-    <p>{{ page.about.subtitle }}</p>
+  <div class="flex items-center">
     <div>
-      {{ page.about.description_html | markdownify }}
+      <h2 class="font-serif text-dark text-2xl">{{ page.about.heading }}</h2>
+      <p class="uppercase mb-4">{{ page.about.subtitle }}</p>
+      <div>
+        {{ page.about.description_html }}
+      </div>
+      <a class="button" href="{{ page.about.button.url }}">{{ page.about.button.text }}</a>
     </div>
-    <a class="button" href="{{ page.about.button.url }}">{{ page.about.button.text }}</a>
   </div>
 
   <!-- Right Column / Image -->

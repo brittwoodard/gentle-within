@@ -1,5 +1,18 @@
 ---
 layout: default
+header: 
+  title: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  subtitle: eiusmod tempor incididunt ut labore
+  button: 
+    text: Book a Discovery Call
+    url: 
+  images: 
+    background-image: 
+      image_path: /uploads/temporary.jpg
+      image_focus: left
+    featured-image: 
+      image_path: /uploads/temporary.jpg
+      image_focus:  
 seo:
   title: This should appear in the browser tab
   description:
@@ -16,4 +29,21 @@ seo:
     <a href="{{item.url}}" class="py-1 px-8 lg:px-16">{{item.title}}</a>
   {% endfor %}
   </nav>
+</section>
+
+<!-- Hero Banner -->
+<section class="grid grid-cols-3">
+
+  <!-- Image / Left Column -->
+  <div class="bg-image-style min-h-[80vh]" style="background-image: url('{{page.header.images.background-image.image_path}}'); background-position: {{page.header.images.background-image.image_focus}}"></div>
+
+  <!-- Right Column -->
+  <div class="col-span-2">
+    <div>
+      <h1>{{page.header.title}}</h1>
+      <p>{{page.header.subtitle}}</p>
+      <a class="button" href="{{page.header.button.url}}">{{page.header.button.text}}</a>
+    </div>
+  </div>
+
 </section>

@@ -444,6 +444,11 @@ body {
   --tw-contain-style:  ;
 }
 /* Images */
+.bg-image-style {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /* Forms */
 .focus-main:focus {
   outline: 2px solid transparent;
@@ -464,6 +469,9 @@ body {
 }
 .z-20 {
   z-index: 20;
+}
+.col-span-2 {
+  grid-column: span 2 / span 2;
 }
 .m-2 {
   margin: 0.5rem;
@@ -490,11 +498,17 @@ body {
 .flex {
   display: flex;
 }
+.grid {
+  display: grid;
+}
 .hidden {
   display: none;
 }
 .h-screen {
   height: 100vh;
+}
+.min-h-\[80vh\] {
+  min-height: 80vh;
 }
 .w-full {
   width: 100%;
@@ -504,6 +518,9 @@ body {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-wrap {
   flex-wrap: wrap;

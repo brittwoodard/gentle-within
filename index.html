@@ -21,6 +21,15 @@ who-you-serve:
   button:
     text: Book a Discovery Call
     url:     
+approaches: 
+ - title: Mental Health Therapy & Psychotherapy
+   description: explore deep-seated emotions and behaviors
+ - title: Trauma-Focused Cognitive Behavioral Thearpy (Tf-Cbt)
+   description: Heal from past trauma
+ - title: Cognitive Processing Thearpy (Cpt)
+   description: Modify distorted throughs and beliefs related to trauma
+ - title: Dialectical Behavior Therapy (Dbt)
+   description: Intense emotions, devleoping healthier coping strategies, and improving interpersonal relationships
 seo:
   title: Gentle Within
   description: 
@@ -71,5 +80,23 @@ seo:
       {{ page.who-you-serve.description_html | markdownify }}
     </div>
     <a class="button" href="{{ page.who-you-serve.button.url }}">{{ page.who-you-serve.button.text }}</a>
+  </div>
+</section>
+
+
+<!-- Healing Approaches -->
+<section class="grid grid-cols-2">
+
+  <!-- Left Column / Image -->
+  <div class="bg-image-style"></div>
+
+  <!-- Right Column / Text -->
+  <div>
+  {% for item in page.approaches %}
+    <div>
+      <h3>{{item.title}}</h3>
+      <p>{{item.description}}</p>
+    </div>
+  {% endfor %}
   </div>
 </section>

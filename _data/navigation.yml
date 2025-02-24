@@ -8,11 +8,17 @@ header:
   - title: Book a Discovery Call
     url: /discover
 footer:
-  - title: Home
-    url: /index
-  - title: About
-    url: /about  
-  - title: Contact
-    url: /contact
-  - title: Book a Discovery Call
-    url: /discover
+  pages: 
+   - title: About
+     url: /about  
+   - title: Contact
+     url: /contact
+   - title: Book a Discovery Call
+     url: /discover
+  services: 
+   - title: One on One Therapy Sessions
+     url: 
+   - title: Community Support Groups
+     url: 
+   - title: Courses for Nsw Students
+     url: 

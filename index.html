@@ -226,3 +226,40 @@ seo:
     <img src="{{ page.cta.images.featured-image.image_path }}" alt="{{ page.cta.images.featured-image.image_description }}" class="w-40 h-auto">
   </div>
 </section>
+
+
+<!-- Site Footer -->
+<footer class="grid grid-cols-3">
+
+  <!-- Left Column / Footer Navigation -->
+  <div class="col-span-2 grid grid-cols-2 gap-4">
+      
+      <!-- Services -->
+      <div>
+        <nav class="space-y-2">
+          {% for item in site.data.navigation.footer.services %}
+          <a href="{{ item.url }}" class="block hover:text-gray-400">{{ item.title }}</a>
+          {% endfor %}
+          </nav>
+      </div>
+
+      <!-- Key Pages -->
+      <div>
+        <nav class="space-y-2">
+          {% for item in site.data.navigation.footer.pages %}
+          <a href="{{ item.url }}" class="block hover:text-gray-400">{{ item.title }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+
+  </div>
+
+  <!-- Right Column / Socials -->
+  <div class="col-span-1">
+      <p>Gentle Within</p>
+      <div class="flex space-x-4">
+          <!-- Social media links go here -->
+      </div>
+  </div>
+
+</footer>

@@ -964,14 +964,48 @@ p:last-child {
   .md\:left-\[10\%\] {
     left: 10%;
   }
+  .md\:bottom-\[20\%\] {
+    bottom: 20%;
+  }
+  .md\:order-last {
+    order: 9999;
+  }
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
   .md\:mr-12 {
     margin-right: 3rem;
+  }
+  .md\:ml-12 {
+    margin-left: 3rem;
+  }
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+  .md\:ml-20 {
+    margin-left: 5rem;
+  }
+  .md\:mr-20 {
+    margin-right: 5rem;
+  }
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+  .md\:grid {
+    display: grid;
   }
   .md\:h-\[60vh\] {
     height: 60vh;
   }
   .md\:min-h-\[80vh\] {
     min-height: 80vh;
+  }
+  .md\:min-h-\[28vh\] {
+    min-height: 28vh;
   }
   .md\:w-\[40\%\] {
     width: 40%;
@@ -994,12 +1028,45 @@ p:last-child {
   .md\:w-\[45vw\] {
     width: 45vw;
   }
+  .md\:w-\[80\%\] {
+    width: 80%;
+  }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
+  .md\:gap-20 {
+    gap: 5rem;
+  }
+  .md\:gap-8 {
+    gap: 2rem;
   }
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .md\:text-right {
+    text-align: right;
   }
 }
 

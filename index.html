@@ -113,7 +113,7 @@ seo:
   </div>
 
   <!-- Right Column -->
-  <div class="pt-24 pb-20 px-8 lg:px-0 lg:mr-12 flex items-center ml-12">
+  <div class="pt-24 pb-20 px-8 lg:px-0 lg:mr-12 flex items-center md:ml-12">
     <div class="lg:w-[60%]">
       <h1 class="font-serif text-dark text-2xl">{{ page.header.title }}</h1>
       <p class="text-[1.2rem]">{{ page.header.subtitle }}</p>
@@ -140,10 +140,10 @@ seo:
 
 
 <!-- Healing Approaches -->
-<section class="grid lg:grid-cols-2 lg:gap-20 py-12 lg:py-28 px-8 lgpx-20">
+<section class="grid md:grid-cols-2 md:gap-8 lg:gap-20 py-12 md:py-20 lg:py-28 px-8 lg:px-20">
 
   <!-- Left Column / Image -->
-  <div class="bg-image-style min-h-[60vh] mb-12 lg:mb-0" style="background-image: url('{{ page.approach.image.image_path }}'); background-position: {{ page.approach.image.image_focus }};"></div>
+  <div class="bg-image-style min-h-[60vh] mb-12 md:mb-0" style="background-image: url('{{ page.approach.image.image_path }}'); background-position: {{ page.approach.image.image_focus }};"></div>
 
   <!-- Right Column / Text -->
   <div>
@@ -158,7 +158,7 @@ seo:
 
 
 <!-- About Section -->
-<section class="grid lg:grid-cols-2 lg:gap-20 bg-main py-12 lg:py-28 lg:px-20">
+<section class="grid md:grid-cols-2 lg:gap-20 bg-main py-12 md:py-20 lg:py-28 lg:px-20">
 
   <!-- Left Column / Text -->
   <div class="flex items-center px-8 lg:px-0">
@@ -173,7 +173,7 @@ seo:
   </div>
 
   <!-- Right Column / Image (with floating illustration) -->
-  <img class="order-first lg:order-last mb-8 lg:mb-0 px-2 lg:px-0" src="/uploads/temporary-about.png">
+  <img class="order-first md:order-last mb-8 lg:mb-0 px-2 lg:px-0" src="/uploads/temporary-about.png">
 
 </section>
 
@@ -215,11 +215,11 @@ seo:
 
 
 <!-- Call to Action -->
-<section class="relative lg:grid lg:grid-cols-4">
+<section class="relative md:grid md:grid-cols-4">
 
   <!-- Left Column / Text -->
-  <div class="col-span-3 flex items-center my-28 lg:my-0">
-    <div class="px-12 lg:px-0 lg:ml-20">
+  <div class="col-span-3 flex items-center my-28 md:my-0">
+    <div class="px-12 md:w-[80%] lg:px-0 lg:ml-20">
       <h2 class="font-serif text-dark text-2xl">{{ page.cta.heading }}</h2>
       <div class="w-[80%]">
         {{ page.cta.description_html | markdownify }}
@@ -229,9 +229,9 @@ seo:
   </div>
 
   <!-- Right Column / Image -->
-  <div class="bg-image-style h-[50vh] lg:min-h-[70vh] bg-overlay medium w-[60%] ml-auto" style="background-image: url('{{ page.cta.images.background-image.image_path }}'); background-position: {{ page.cta.images.background-image.image_path }};"></div>
+  <div class="bg-image-style h-[50vh] lg:min-h-[70vh] bg-overlay medium w-[60%] md:w-[100%] ml-auto" style="background-image: url('{{ page.cta.images.background-image.image_path }}'); background-position: {{ page.cta.images.background-image.image_path }};"></div>
 
   <!-- Floating Image -->
-  <div class="absolute bottom-[11%] lg:bottom-[20%] right-[15%] z-10 bg-image-style aspect-square min-h-[34vh] lg:min-h-[40vh]" style="background-image: url('{{ page.cta.images.featured-image.image_path }}');"></div>
+  <div class="absolute bottom-[11%] md:bottom-[20%] right-[15%] z-10 bg-image-style aspect-square min-h-[34vh] md:min-h-[28vh] lg:min-h-[40vh]" style="background-image: url('{{ page.cta.images.featured-image.image_path }}');"></div>
 
 </section>

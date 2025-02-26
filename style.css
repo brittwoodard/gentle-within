@@ -95,6 +95,39 @@ font-family: ibarra-real-nova, serif; 400, 700
         /* Inherits text color for easy styling */
     }
 
+    /* Overlays */
+    .bg-overlay {
+        position: relative;
+    }
+
+    .bg-overlay::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .bg-overlay>* {
+        position: relative;
+    }
+
+    .bg-overlay.light::before {
+        background-color: rgba(207, 209, 198, 0.3);
+
+    }
+
+    .bg-overlay.medium::before {
+        background-color: rgba(207, 209, 198, 0.5);
+
+    }
+
+    .bg-overlay.dark::before {
+        background-color: rgba(207, 209, 198, 0.7);
+
+    }
+
     /* Forms */
     .focus-main {
         @apply focus:outline-none focus:ring-2 focus:ring-main

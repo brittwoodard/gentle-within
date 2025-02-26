@@ -1,7 +1,7 @@
 ---
 layout: default
 header: 
-  title: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  title: Lorem ipsum dolor sit amet
   subtitle: eiusmod tempor incididunt ut labore
   button: 
     text: Book a Discovery Call
@@ -104,16 +104,16 @@ seo:
 
 
 <!-- Hero Banner -->
-<section class="grid grid-cols-2">
+<section class="grid lg:grid-cols-2">
 
-  <div class="grid grid-cols-2">
+  <div class="grid lg:grid-cols-2">
     <!-- Image / Left Column -->
-    <div class="relative bg-image-style min-h-[80vh] bg-overlay light" style="background-image: url('{{ page.header.images.background-image.image_path }}'); background-position: {{ page.header.images.background-image.image_focus }};"></div>
+    <div class="relative w-[65%] lg:w-[100%] bg-image-style h-[50vh] lg:min-h-[80vh] bg-overlay light" style="background-image: url('{{ page.header.images.background-image.image_path }}'); background-position: {{ page.header.images.background-image.image_focus }};"></div>
   </div>
 
   <!-- Right Column -->
-  <div class="mr-12 flex items-center">
-    <div class="w-[60%]">
+  <div class="pt-20 pb-12 px-8 lg:px-0 lg:mr-12 flex items-center">
+    <div class="lg:w-[60%]">
       <h1 class="font-serif text-dark text-2xl">{{ page.header.title }}</h1>
       <p class="text-[1.2rem]">{{ page.header.subtitle }}</p>
       <a class="button" href="{{ page.header.button.url }}">{{ page.header.button.text }}</a>
@@ -121,7 +121,7 @@ seo:
   </div>
 
   <!-- Floating Image -->
-  <div class="bg-image-style absolute top-[25%] left-[18%] z-10 h-[60vh] w-[25vw] rounded-t-[15rem]" style="background-image: url('{{ page.header.images.featured-image.image_path }}');"></div>
+  <div class="bg-image-style absolute top-[30%] lg:top-[25%] left-[20%] lg:left-[18%] z-10 h-[45vh] lg:h-[60vh] w-[70vw] lg:w-[25vw] rounded-t-[15rem]" style="background-image: url('{{ page.header.images.featured-image.image_path }}');"></div>
 
 </section>
 

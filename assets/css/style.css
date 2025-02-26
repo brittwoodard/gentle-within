@@ -620,6 +620,18 @@ p:last-child {
   margin-left: auto;
   margin-right: auto;
 }
+.mx-10p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.mx-\[20\%\] {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.mx-\[15\%\] {
+  margin-left: 15%;
+  margin-right: 15%;
+}
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -679,6 +691,9 @@ p:last-child {
 }
 .min-h-\[80vh\] {
   min-height: 80vh;
+}
+.min-h-\[60vh\] {
+  min-height: 60vh;
 }
 .w-\[25vw\] {
   width: 25vw;
@@ -750,9 +765,16 @@ p:last-child {
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
 .rounded-t-\[15rem\] {
   border-top-left-radius: 15rem;
   border-top-right-radius: 15rem;
+}
+.rounded-t-\[50\%\] {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
 .border {
   border-width: 1px;

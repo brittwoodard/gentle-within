@@ -632,6 +632,10 @@ p:last-child {
   margin-left: auto;
   margin-right: auto;
 }
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -652,6 +656,9 @@ p:last-child {
 }
 .mt-4 {
   margin-top: 1rem;
+}
+.mt-8 {
+  margin-top: 2rem;
 }
 .block {
   display: block;
@@ -908,11 +915,20 @@ p:last-child {
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
   .lg\:mr-12 {
     margin-right: 3rem;
   }
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+  .lg\:ml-20 {
+    margin-left: 5rem;
+  }
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
   .lg\:flex {
     display: flex;
@@ -941,6 +957,15 @@ p:last-child {
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .lg\:justify-end {
+    justify-content: flex-end;
+  }
   .lg\:gap-20 {
     gap: 5rem;
   }
@@ -963,5 +988,12 @@ p:last-child {
   .lg\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
+  }
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .lg\:text-right {
+    text-align: right;
   }
 }

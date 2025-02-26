@@ -8,7 +8,7 @@
         <div>
             <nav class="space-y-2">
                 {% for item in site.data.navigation.footer.services %}
-                <a href="{{ item.url }}" class="block hover:text-gray-400">{{ item.title }}</a>
+                <a href="{{ item.url }}" class="block hover:text-feature hover:transition hover:duration-500">{{ item.title }}</a>
                 {% endfor %}
             </nav>
         </div>
@@ -17,7 +17,7 @@
         <div>
             <nav class="space-y-2">
                 {% for item in site.data.navigation.footer.pages %}
-                <a href="{{ item.url }}" class="block hover:text-gray-400">{{ item.title }}</a>
+                <a href="{{ item.url }}" class="block hover:text-feature hover:transition hover:duration-500">{{ item.title }}</a>
                 {% endfor %}
             </nav>
         </div>
@@ -25,16 +25,16 @@
     </div>
 
     <!-- Right Column / Socials -->
-    <div class="col-span-1 text-dark text-center md:text-right mt-8 md:mt-0">
-        <a class="font-serif text-2xl" href="/index.html">Gentle Within</a>
+    <div class="col-span-1 text-center md:text-right mt-8 md:mt-0">
+        <a class="font-serif text-2xl text-dark hover:text-feature hover:transition hover:duration-500" href="/index.html">Gentle Within</a>
         
         <div class="flex space-x-4 justify-center md:justify-end">
             
-            <a href="https://www.facebook.com/{{ site.data.site-settings.social.facebook_username }}/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.facebook.com/{{ site.data.site-settings.social.facebook_username }}/"><i class="fa-brands fa-facebook text-dark hover:text-feature hover:transition hover:duration-500"></i></a>
 
-            <a href="https://www.instagram.com/{{ site.data.site-settings.social.instagram_username }}/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/{{ site.data.site-settings.social.instagram_username }}/"><i class="fa-brands fa-instagram text-dark hover:text-feature hover:transition hover:duration-500"></i></a>
 
-            <a href="https://www.linkedin.com/company/{{ site.data.site-settings.social.linkedin_username }}/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/company/{{ site.data.site-settings.social.linkedin_username }}/"><i class="fa-brands fa-linkedin-in text-dark hover:text-feature hover:transition hover:duration-500"></i></a>
         </div>
     </div>
 

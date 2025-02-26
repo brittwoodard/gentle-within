@@ -9,6 +9,14 @@ font-family: ibarra-real-nova, serif; 400, 700
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --featured: #B37B64;
+    --dark: #66766C;
+    --x-dark: #141715;
+    --main: #CFD1C6;
+    --light: #F2F2F0;
+}
+
 
 /* ----------- Default Styles to apply to the whole project  --------- */
 
@@ -126,6 +134,99 @@ font-family: ibarra-real-nova, serif; 400, 700
     .bg-overlay.dark::before {
         background-color: rgba(207, 209, 198, 0.7);
 
+    }
+
+    /* Mobile Menu */
+    .mobile-button {
+        position: fixed;
+        top: 3.2vh;
+        right: 2vh;
+        z-index: 40;
+        padding: 0.5rem;
+    }
+
+    .mobile-button span {
+        width: 2rem;
+        border: 0.5px solid var(--dark);
+        background-color: var(--dark);
+        display: block;
+        border-radius: 22px;
+        transition: 2s;
+    }
+
+    .mobile-button.active span {
+        border-color: var(--dark);
+        background-color: var(--dark);
+    }
+
+    .mobile-top,
+    .mobile-bottom {
+        position: absolute;
+    }
+
+    .mobile-top {
+        top: -02px;
+    }
+
+    .mobile-bottom {
+        bottom: -02px;
+    }
+
+    .mobile-button.active .mobile-top {
+        border-color: var(--featured);
+        position: absolute;
+        top: 8px;
+        transform: rotateZ(45deg);
+    }
+
+    .mobile-button.active .mobile-middle {
+        /*   transform: rotateZ(270deg); */
+        border-color: var(--featured);
+        background-color: var(--featured);
+    }
+
+    .mobile-button.active .mobile-bottom {
+        border-color: var(--featured);
+        position: absolute;
+        bottom: 8px;
+        transform: rotateZ(-45deg);
+    }
+
+    .mobile-menu {
+        display: flex;
+        position: fixed;
+        top: 0vh;
+        left: 100vw;
+        right: -100vw;
+        bottom: 0vh;
+        background-color: var(--main);
+        padding: 5%;
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+        z-index: 20;
+        transition: 1s;
+        align-content: space-around;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .mobile-menu.active {
+        @apply left-0 md:left-[50%] right-0
+    }
+
+    .mobile-menu a {
+        text-decoration: none;
+        font-size: 1.25rem;
+        font-weight: 300;
+        color: var(--x-dark);
+        display: block;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        white-space: nowrap;
+        text-transform: uppercase;
+    }
+
+    .mobile-menu a:hover {
+        color: var(--featured);
     }
 
     /* Forms */

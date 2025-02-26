@@ -109,12 +109,12 @@ seo:
   <div class="grid lg:grid-cols-2">
 
     <!-- Image / Left Column -->
-    <div class="relative w-[65%] md:w-[75%] lg:w-[100%] bg-image-style h-[50vh] md:min-h-[80vh] bg-overlay light" style="background-image: url('{{ page.header.images.background-image.image_path }}'); background-position: {{ page.header.images.background-image.image_focus }};"></div>
+    <div class="relative w-[65%] md:w-[75%] lg:w-[100%] bg-image-style h-[50vh] md:min-h-[80vh] bg-overlay light" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000" style="background-image: url('{{ page.header.images.background-image.image_path }}'); background-position: {{ page.header.images.background-image.image_focus }};"></div>
   </div>
 
   <!-- Right Column -->
   <div class="pt-24 pb-20 px-8 lg:px-0 lg:mr-12 flex items-center md:ml-12">
-    <div class="lg:w-[60%]">
+    <div class="lg:w-[60%]" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
       <h1 class="font-serif text-dark text-2xl">{{ page.header.title }}</h1>
       <p class="text-[1.2rem]">{{ page.header.subtitle }}</p>
       <a class="button" href="{{ page.header.button.url }}">{{ page.header.button.text }}</a>
@@ -122,14 +122,14 @@ seo:
   </div>
 
   <!-- Floating Image -->
-  <div class="bg-image-style absolute top-[30%] lg:top-[25%] left-[20%] md:left-[10%] lg:left-[18%] z-10 h-[45vh] lg:h-[60vh] w-[70vw] md:w-[45vw] lg:w-[25vw] rounded-t-[15rem]" style="background-image: url('{{ page.header.images.featured-image.image_path }}');"></div>
+  <div class="bg-image-style absolute top-[10%] md:top-[30%] lg:top-[27%] left-[20%] md:left-[10%] lg:left-[18%] z-10 h-[45vh] lg:h-[60vh] w-[70vw] md:w-[45vw] lg:w-[25vw] rounded-t-[15rem]" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000" data-aos-delay="500" style="background-image: url('{{ page.header.images.featured-image.image_path }}');"></div>
 
 </section>
 
 
 <!-- Who You Serve -->
 <section class="bg-light py-20 lg:py-28 px-8 lg:px-20">
-  <div class="text-center lg:w-[80%] mx-auto">
+  <div class="text-center lg:w-[80%] mx-auto" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
     <h2 class="font-serif text-dark text-2xl capitalize mb-4">{{ page.who-you-serve.heading_html }}</h2>
     <div class="mb-4">
       {{ page.who-you-serve.description_html | markdownify }}
@@ -140,7 +140,7 @@ seo:
 
 
 <!-- Healing Approaches -->
-<section class="grid md:grid-cols-2 md:gap-8 lg:gap-20 py-12 md:py-20 lg:py-28 px-8 lg:px-20">
+<section class="grid md:grid-cols-2 md:gap-8 lg:gap-20 py-12 md:py-20 lg:py-28 px-8 lg:px-20" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
 
   <!-- Left Column / Image -->
   <div class="bg-image-style min-h-[60vh] mb-12 md:mb-0" style="background-image: url('{{ page.approach.image.image_path }}'); background-position: {{ page.approach.image.image_focus }};"></div>
@@ -158,7 +158,7 @@ seo:
 
 
 <!-- About Section -->
-<section class="grid md:grid-cols-2 lg:gap-20 bg-main py-12 md:py-20 lg:py-28 lg:px-20">
+<section class="grid md:grid-cols-2 lg:gap-20 bg-main py-12 md:py-20 lg:py-28 lg:px-20" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
 
   <!-- Left Column / Text -->
   <div class="flex items-center px-8 lg:px-0">
@@ -179,7 +179,7 @@ seo:
 
 
 <!-- Work with Me Section -->
-<section class="bg-light py-20 lg:py-28 px-8 lg:px-20">
+<section class="bg-light py-20 lg:py-28 px-8 lg:px-20" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
   <div class="text-center">
     <h2 class="font-serif text-dark text-2xl">{{ page.services.heading_html }}</h2>
     <div class="mb-12 lg:w-[80%] mx-auto">
@@ -202,7 +202,7 @@ seo:
 
 
 <!-- Testimonials Section -->
-<section class="bg-dark text-white py-12 lg:py-28 px-8 lg:px-20 bg-image-style" style="background-image: url('{{ page.testimonials.background-image.image_path }}'); background-position: {{ page.testimonials.background-image.image_focus }};">
+<section class="bg-dark text-white py-12 lg:py-28 px-8 lg:px-20 bg-image-style" data-aos="fade" data-aos-offset="0" data-aos-duration="3000" style="background-image: url('{{ page.testimonials.background-image.image_path }}'); background-position: {{ page.testimonials.background-image.image_focus }};">
   <div class="testimonial-container">
     {% for item in page.testimonials.testimonials %}
     <div class="testimonial-item text-center lg:w-[80%] mx-auto">
@@ -219,19 +219,19 @@ seo:
 
   <!-- Left Column / Text -->
   <div class="col-span-3 flex items-center my-28 md:my-0">
-    <div class="px-12 md:w-[80%] lg:px-0 lg:ml-20">
+    <div class="px-12 md:w-[80%] lg:px-0 lg:ml-20" data-aos="fade" data-aos-duration="3000">
       <h2 class="font-serif text-dark text-2xl">{{ page.cta.heading }}</h2>
       <div class="w-[80%]">
-        {{ page.cta.description_html | markdownify }}
+        {{ page.cta.description_html }}
       </div>
       <a class="button" href="{{ page.cta.button.url }}">{{ page.cta.button.text }}</a>
     </div>
   </div>
 
   <!-- Right Column / Image -->
-  <div class="bg-image-style h-[50vh] lg:min-h-[70vh] bg-overlay medium w-[60%] md:w-[100%] ml-auto" style="background-image: url('{{ page.cta.images.background-image.image_path }}'); background-position: {{ page.cta.images.background-image.image_path }};"></div>
+  <div class="bg-image-style h-[50vh] lg:min-h-[70vh] bg-overlay medium w-[60%] md:w-[100%] ml-auto" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000" style="background-image: url('{{ page.cta.images.background-image.image_path }}'); background-position: {{ page.cta.images.background-image.image_path }};"></div>
 
   <!-- Floating Image -->
-  <div class="absolute bottom-[11%] md:bottom-[20%] right-[15%] z-10 bg-image-style aspect-square min-h-[34vh] md:min-h-[28vh] lg:min-h-[40vh]" style="background-image: url('{{ page.cta.images.featured-image.image_path }}');"></div>
+  <div class="absolute bottom-[11%] md:bottom-[20%] right-[15%] z-10 bg-image-style aspect-square min-h-[34vh] md:min-h-[28vh] lg:min-h-[40vh]" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000" data-aos-delay="500" style="background-image: url('{{ page.cta.images.featured-image.image_path }}');"></div>
 
 </section>

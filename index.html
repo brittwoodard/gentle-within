@@ -104,15 +104,16 @@ seo:
 
 
 <!-- Hero Banner -->
-<section class="grid lg:grid-cols-2">
+<section class="grid md:grid-cols-2">
 
   <div class="grid lg:grid-cols-2">
+
     <!-- Image / Left Column -->
-    <div class="relative w-[65%] lg:w-[100%] bg-image-style h-[50vh] lg:min-h-[80vh] bg-overlay light" style="background-image: url('{{ page.header.images.background-image.image_path }}'); background-position: {{ page.header.images.background-image.image_focus }};"></div>
+    <div class="relative w-[65%] md:w-[75%] lg:w-[100%] bg-image-style h-[50vh] md:min-h-[80vh] bg-overlay light" style="background-image: url('{{ page.header.images.background-image.image_path }}'); background-position: {{ page.header.images.background-image.image_focus }};"></div>
   </div>
 
   <!-- Right Column -->
-  <div class="pt-20 pb-12 px-8 lg:px-0 lg:mr-12 flex items-center">
+  <div class="pt-24 pb-20 px-8 lg:px-0 lg:mr-12 flex items-center ml-12">
     <div class="lg:w-[60%]">
       <h1 class="font-serif text-dark text-2xl">{{ page.header.title }}</h1>
       <p class="text-[1.2rem]">{{ page.header.subtitle }}</p>
@@ -121,13 +122,13 @@ seo:
   </div>
 
   <!-- Floating Image -->
-  <div class="bg-image-style absolute top-[30%] lg:top-[25%] left-[20%] lg:left-[18%] z-10 h-[45vh] lg:h-[60vh] w-[70vw] lg:w-[25vw] rounded-t-[15rem]" style="background-image: url('{{ page.header.images.featured-image.image_path }}');"></div>
+  <div class="bg-image-style absolute top-[30%] lg:top-[25%] left-[20%] md:left-[10%] lg:left-[18%] z-10 h-[45vh] lg:h-[60vh] w-[70vw] md:w-[45vw] lg:w-[25vw] rounded-t-[15rem]" style="background-image: url('{{ page.header.images.featured-image.image_path }}');"></div>
 
 </section>
 
 
 <!-- Who You Serve -->
-<section class="bg-light py-12 lg:py-28 px-8 lg:px-20">
+<section class="bg-light py-20 lg:py-28 px-8 lg:px-20">
   <div class="text-center lg:w-[80%] mx-auto">
     <h2 class="font-serif text-dark text-2xl capitalize mb-4">{{ page.who-you-serve.heading_html }}</h2>
     <div class="mb-4">
@@ -172,13 +173,13 @@ seo:
   </div>
 
   <!-- Right Column / Image (with floating illustration) -->
-  <img class="order-first mb-8 lg:mb-0 px-2 lg:px-0" src="/uploads/temporary-about.png">
+  <img class="order-first lg:order-last mb-8 lg:mb-0 px-2 lg:px-0" src="/uploads/temporary-about.png">
 
 </section>
 
 
 <!-- Work with Me Section -->
-<section class="bg-light py-12 lg:py-28 px-8 lg:px-20">
+<section class="bg-light py-20 lg:py-28 px-8 lg:px-20">
   <div class="text-center">
     <h2 class="font-serif text-dark text-2xl">{{ page.services.heading_html }}</h2>
     <div class="mb-12 lg:w-[80%] mx-auto">
@@ -188,7 +189,7 @@ seo:
 
   <div class="grid lg:grid-cols-3">
     {% for item in page.services.services %}
-    <div class="text-center lg:px-12 mb-8 last:mb-0 lg:mb-0">
+    <div class="text-center lg:px-12 mb-16 last:mb-0 lg:mb-0">
       <div class="bg-image-style aspect-square min-h-[30vh] mb-8" style="background-image: url('{{ item.featured_image }}');"></div>
       <h3 class="font-serif text-dark text-lg">{{ item.title }}</h3>
       <p>{{ item.description }}</p>
@@ -214,10 +215,10 @@ seo:
 
 
 <!-- Call to Action -->
-<section class="relative grid lg:grid-cols-4">
+<section class="relative lg:grid lg:grid-cols-4">
 
   <!-- Left Column / Text -->
-  <div class="col-span-3 flex items-center">
+  <div class="col-span-3 flex items-center my-28 lg:my-0">
     <div class="px-12 lg:px-0 lg:ml-20">
       <h2 class="font-serif text-dark text-2xl">{{ page.cta.heading }}</h2>
       <div class="w-[80%]">
@@ -228,9 +229,9 @@ seo:
   </div>
 
   <!-- Right Column / Image -->
-  <div class="bg-image-style min-h-[70vh] bg-overlay medium" style="background-image: url('{{ page.cta.images.background-image.image_path }}'); background-position: {{ page.cta.images.background-image.image_path }};"></div>
+  <div class="bg-image-style h-[50vh] lg:min-h-[70vh] bg-overlay medium w-[60%] ml-auto" style="background-image: url('{{ page.cta.images.background-image.image_path }}'); background-position: {{ page.cta.images.background-image.image_path }};"></div>
 
   <!-- Floating Image -->
-  <div class="absolute bottom-[20%] right-[15%] z-10 bg-image-style aspect-square min-h-[40vh]" style="background-image: url('{{ page.cta.images.featured-image.image_path }}');"></div>
+  <div class="absolute bottom-[11%] lg:bottom-[20%] right-[15%] z-10 bg-image-style aspect-square min-h-[34vh] lg:min-h-[40vh]" style="background-image: url('{{ page.cta.images.featured-image.image_path }}');"></div>
 
 </section>

@@ -605,6 +605,9 @@ p:last-child {
 .z-20 {
   z-index: 20;
 }
+.order-first {
+  order: -9999;
+}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -688,6 +691,9 @@ p:last-child {
 }
 .min-h-\[80vh\] {
   min-height: 80vh;
+}
+.min-h-\[60vh\] {
+  min-height: 60vh;
 }
 .w-\[25vw\] {
   width: 25vw;
@@ -819,6 +825,10 @@ p:last-child {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -901,6 +911,9 @@ p:last-child {
   .lg\:mr-12 {
     margin-right: 3rem;
   }
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
   .lg\:flex {
     display: flex;
   }
@@ -922,11 +935,33 @@ p:last-child {
   .lg\:w-\[60\%\] {
     width: 60%;
   }
+  .lg\:w-\[80\%\] {
+    width: 80%;
+  }
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .lg\:gap-20 {
+    gap: 5rem;
   }
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .lg\:py-10p {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .lg\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 }

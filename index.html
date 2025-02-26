@@ -127,8 +127,8 @@ seo:
 
 
 <!-- Who You Serve -->
-<section class="bg-light py-10p px-20">
-  <div class="text-center w-[80%] mx-auto">
+<section class="bg-light py-12 lg:py-28 px-8 lg:px-20">
+  <div class="text-center lg:w-[80%] mx-auto">
     <h2 class="font-serif text-dark text-2xl capitalize mb-4">{{ page.who-you-serve.heading_html }}</h2>
     <div class="mb-4">
       {{ page.who-you-serve.description_html | markdownify }}
@@ -139,10 +139,10 @@ seo:
 
 
 <!-- Healing Approaches -->
-<section class="grid grid-cols-2 gap-20 py-10p px-20">
+<section class="grid lg:grid-cols-2 lg:gap-20 py-12 lg:py-28 px-8 lgpx-20">
 
   <!-- Left Column / Image -->
-  <div class="bg-image-style" style="background-image: url('{{ page.approach.image.image_path }}'); background-position: {{ page.approach.image.image_focus }};"></div>
+  <div class="bg-image-style min-h-[60vh] mb-12 lg:mb-0" style="background-image: url('{{ page.approach.image.image_path }}'); background-position: {{ page.approach.image.image_focus }};"></div>
 
   <!-- Right Column / Text -->
   <div>
@@ -157,10 +157,10 @@ seo:
 
 
 <!-- About Section -->
-<section class="grid grid-cols-2 gap-20 bg-main py-10p px-20">
+<section class="grid lg:grid-cols-2 lg:gap-20 bg-main py-12 lg:py-28 lg:px-20">
 
   <!-- Left Column / Text -->
-  <div class="flex items-center">
+  <div class="flex items-center px-8 lg:px-0">
     <div>
       <h2 class="font-serif text-dark text-2xl">{{ page.about.heading }}</h2>
       <p class="uppercase mb-4">{{ page.about.subtitle }}</p>
@@ -172,13 +172,13 @@ seo:
   </div>
 
   <!-- Right Column / Image (with floating illustration) -->
-  <img src="/uploads/temporary-about.png">
+  <img class="order-first mb-8 lg:mb-0 px-2 lg:px-0" src="/uploads/temporary-about.png">
 
 </section>
 
 
 <!-- Work with Me Section -->
-<section class="bg-light py-10p px-20">
+<section class="bg-light py-28 px-20">
   <div class="text-center">
     <h2 class="font-serif text-dark text-2xl">{{ page.services.heading_html }}</h2>
     <div class="mb-12 w-[80%] mx-auto">
@@ -201,7 +201,7 @@ seo:
 
 
 <!-- Testimonials Section -->
-<section class="bg-dark text-white py-10p px-20 bg-image-style" style="background-image: url('{{ page.testimonials.background-image.image_path }}'); background-position: {{ page.testimonials.background-image.image_focus }};">
+<section class="bg-dark text-white py-28 px-20 bg-image-style" style="background-image: url('{{ page.testimonials.background-image.image_path }}'); background-position: {{ page.testimonials.background-image.image_focus }};">
   <div class="testimonial-container">
     {% for item in page.testimonials.testimonials %}
     <div class="testimonial-item text-center w-[80%] mx-auto">

@@ -73,9 +73,13 @@ testimonials:
        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
        <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
      author: Mary Jane
+   - testimonial_html: |
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+      <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+     author: Mary Poppins
   background-image: 
-    image_path: 
-    image_focus: 
+    image_path: /uploads/temporary-testimonials.jpg
+    image_focus: bottom right
 cta: 
   heading: Inviting Call To Action
   description_html: |
@@ -167,8 +171,8 @@ seo:
     </div>
   </div>
 
-  <!-- Right Column / Image -->
-  <div class="bg-image-style min-h-[60vh] rounded-t-[50%] mx-[15%]" style="background-image: url('{{ page.about.image.image_path }}');"></div>
+  <!-- Right Column / Image (with floating illustration) -->
+  <img src="/uploads/temporary-about.png">
 
 </section>
 
@@ -224,7 +228,7 @@ seo:
   </div>
 
   <!-- Right Column / Image -->
-  <div class="bg-image-style min-h-[70vh]" style="background-image: url('{{ page.cta.images.background-image.image_path }}'); background-position: {{ page.cta.images.background-image.image_path }};"></div>
+  <div class="bg-image-style min-h-[70vh] bg-overlay medium" style="background-image: url('{{ page.cta.images.background-image.image_path }}'); background-position: {{ page.cta.images.background-image.image_path }};"></div>
 
   <!-- Floating Image -->
   <div class="absolute bottom-[20%] right-[15%] z-10 bg-image-style aspect-square min-h-[40vh]" style="background-image: url('{{ page.cta.images.featured-image.image_path }}');"></div>

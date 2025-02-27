@@ -8,52 +8,52 @@ image:
   image_focus:
 ---
 
-<section class="grid grid-cols-2">
+<section class="grid grid-cols-2 gap-20 py-20 lg:py-28 px-8 lg:px-20 bg-light">
 
     <!-- Left Column / Image -->
-    <div class="bg-image-style min-h-[60vh]"
-        style="background-image: url({{ page.image.image_path }}); background-position: {{ page.image.image_focus }};">
+    <div class="bg-image-style min-h-[60vh] rounded-t-[50%]"
+        style="background-image: url('{{ page.image.image_path }}'); background-position: {{ page.image.image_focus }};">
     </div>
 
     <!-- Right Column / Text -->
-    <div>
-        <h1>{{ page.heading_html }}</h1>
+    <div class="">
+        <h1 class="font-serif text-3xl text-dark mb-4">{{ page.heading_html }}</h1>
         <div>
             {{ page.description_html }}
         </div>
 
         <!-- Contact Form -->
-        <form name="contact" method="post" data-netlify="" action="/contact-thank-you.html" onSubmit="submit"
+        <form class="mt-8" name="contact" method="post" data-netlify="" action="/contact-thank-you.html" onSubmit="submit"
             data-netlify-honeypot="bot-field">
             <input class="hidden" name="bot-field">
 
-            <div class="grid sm:grid-cols-2 gap-8 mb-4">
+            <div class="grid sm:grid-cols-2 gap-2 mb-2">
                 <div>
                     <input type="text" id="first-name" name="first-name" required
-                        class="block border-b border-dark bg-transparent w-full rounded-none">
-                    <label for="first-name" class="font-serif lowercase mt-2 block">First Name:</label>
+                    placeholder="First Name"
+                    class="border border-dark bg-transparent w-full p-2 placeholder:text-dark rounded-none">
                 </div>
 
                 <div>
                     <input type="text" id="last-name" name="last-name"
-                        class="block border-b border-dark bg-transparent w-full rounded-none">
-                    <label for="last-name" class="font-serif lowercase mt-2 block">Last Name:</label>
+                    placeholder="Last Name"
+                    class="border border-dark bg-transparent w-full p-2 placeholder:text-dark rounded-none">
                 </div>
             </div>
 
-            <div class="mb-4">
+            <div class="mb-2">
                 <input type="email" id="email" name="email" required
-                    class="block border-b border-dark bg-transparent w-full rounded-none">
-                <label for="email" class="font-serif lowercase mt-2 block">Email:</label>
+                placeholder="Email"
+                class="border border-dark bg-transparent w-full p-2 font-sans placeholder:text-dark rounded-none">
             </div>
 
             <div>
                 <textarea id="message" name="message" required rows="8" placeholder="Message"
-                    class="border border-dark bg-transparent w-full p-2 text-dark font-sans placeholder:font-serif placeholder:text-dark lowercase rounded-none"></textarea>
+                    class="border border-dark bg-transparent w-full p-2 placeholder:text-dark rounded-none"></textarea>
             </div>
 
-            <div class="flex justify-end">
-                <button type="submit" class="link mt-4">Send</button>
+            <div class="flex justify-start">
+                <button type="submit" class="button mt-4">Send</button>
             </div>
         </form>
     </div>

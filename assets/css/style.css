@@ -691,6 +691,9 @@ p:last-child {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
 .m-2 {
   margin: 0.5rem;
 }
@@ -737,6 +740,9 @@ p:last-child {
 .mt-2 {
   margin-top: 0.5rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .block {
   display: block;
 }
@@ -770,6 +776,12 @@ p:last-child {
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
+.min-h-\[80vh\] {
+  min-height: 80vh;
+}
+.min-h-\[50vh\] {
+  min-height: 50vh;
+}
 .w-\[60\%\] {
   width: 60%;
 }
@@ -794,11 +806,17 @@ p:last-child {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 .flex-wrap {
   flex-wrap: wrap;
 }
 .items-center {
   align-items: center;
+}
+.justify-start {
+  justify-content: flex-start;
 }
 .justify-end {
   justify-content: flex-end;
@@ -818,6 +836,15 @@ p:last-child {
 .gap-8 {
   gap: 2rem;
 }
+.gap-20 {
+  gap: 5rem;
+}
+.gap-40 {
+  gap: 10rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -834,6 +861,10 @@ p:last-child {
 .rounded-t-\[15rem\] {
   border-top-left-radius: 15rem;
   border-top-right-radius: 15rem;
+}
+.rounded-t-\[50\%\] {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
 .border {
   border-width: 1px;
@@ -922,6 +953,14 @@ p:last-child {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .uppercase {
   text-transform: uppercase;

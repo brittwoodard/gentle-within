@@ -1,6 +1,8 @@
 collections:
-  events:
+  offerings:
     output: true
+    permalink: /:slug
+
 
 # Enable LiveReload
 livereload: true

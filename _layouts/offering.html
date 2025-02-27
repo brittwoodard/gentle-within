@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<!-- Header Section -->
+<section class="grid grid-cols-2">
+
+    <!-- Left Column / Text -->
+    <div>
+        <h1>{{ page.header.title_html }}</h1>
+        <div>
+            {{ page.header.description_html }}
+        </div>
+    </div>
+
+    <!-- Right Column / Image -->
+    <div class="bg-image-style" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
+</section>

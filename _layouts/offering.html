@@ -3,28 +3,30 @@ layout: default
 ---
 
 <!-- Header Section -->
-<section class="grid grid-cols-2">
+<section class="grid grid-cols-3 bg-main py-20 lg:py-28 px-8 lg:px-20">
 
     <!-- Left Column / Text -->
-    <div>
-        <h1>{{ page.header.title_html }}</h1>
+    <div class="col-span-2 lg:w-[80%] flex items-center">
         <div>
-            {{ page.header.description_html }}
+            <h1 class="font-serif text-3xl text-dark mb-2">{{ page.header.title_html }}</h1>
+            <div>
+                {{ page.header.description_html }}
+            </div>
         </div>
     </div>
 
     <!-- Right Column / Image -->
-    <div class="bg-image-style" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
+    <div class="bg-image-style min-h-[54vh] rounded-t-[50%]" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
 </section>
 
 
 <!-- Benefits Section -->
-<section>
-    <h2>{{ page.benefits.heading_html }}</h2>
+<section class="bg-dark py-20 lg:py-28 px-8 lg:px-20">
+    <h2 class="text-2xl font-serif text-white text-center mb-4 capitalize">{{ page.benefits.heading_html }}</h2>
 
     {% assign half_size = page.benefits.benefits.size | divided_by: 2 %}
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-white">
         <ul>
             {% for item in page.benefits.benefits limit: half_size %}
             <li>{{ item }}</li>
@@ -44,23 +46,32 @@ layout: default
 <section class="grid md:grid-cols-2">
 
     <div class="grid lg:grid-cols-2">
-  
-      <!-- Image / Left Column -->
-      <div class="relative w-[65%] md:w-[75%] lg:w-[100%] bg-image-style h-[50vh] md:min-h-[80vh] bg-overlay light" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000" style="background-image: url('{{ page.who-its-for.images.background-image.image_path }}'); background-position: {{ page.who-its-for.images.background-image.image_focus }};"></div>
+
+        <!-- Image / Left Column -->
+        <div class="relative">
+            <div class="relative w-[65%] md:w-[75%] lg:w-[100%] bg-image-style h-[50vh] md:min-h-[80vh] bg-overlay light"
+                data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000"
+                style="background-image: url('{{ page.who-its-for.images.background-image.image_path }}'); background-position: {{ page.who-its-for.images.background-image.image_focus }};">
+            </div>
+
+            <!-- Floating Image -->
+            <div class="absolute top-[12%] left-[60%] z-10 h-[45vh] lg:h-[60vh] w-[70vw] md:w-[45vw] lg:w-[25vw]"
+                data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000" data-aos-delay="500"
+                style="background-image: url('{{ page.who-its-for.images.featured-image.image_path }}'); background-position: {{ page.who-its-for.images.featured-image.image_focus }};">
+            </div>
+        </div>
+
     </div>
-  
+
     <!-- Right Column -->
-    <div class="pt-24 pb-20 px-8 lg:px-0 lg:mr-12 flex items-center md:ml-12">
-      <div class="lg:w-[60%]" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
-        <h1 class="font-serif text-dark text-2xl">{{ page.who-its-for.heading_html }}</h1>
-        <p class="text-[1.2rem]">{{ page.who-its-for.description_html }}</p>
-      </div>
+    <div class="flex items-center">
+        <div class="pr-20" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
+            <h1 class="font-serif text-dark text-2xl capitalize">{{ page.who-its-for.heading_html }}</h1>
+            <p class="text-[1.2rem]">{{ page.who-its-for.description_html }}</p>
+        </div>
     </div>
-  
-    <!-- Floating Image -->
-    <div class="bg-image-style absolute top-[10%] md:top-[30%] lg:top-[27%] left-[20%] md:left-[10%] lg:left-[18%] z-10 h-[45vh] lg:h-[60vh] w-[70vw] md:w-[45vw] lg:w-[25vw] rounded-t-[15rem]" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000" data-aos-delay="500" style="background-image: url('{{ page.who-its-for.images.featured-image.image_path }}'); background-position: {{ page.who-its-for.images.featured-image.image_focus }}"></div>
-  
-  </section>
+
+</section>
 
 
 <!-- Approach / Methodology Section -->
@@ -101,4 +112,21 @@ layout: default
         </li>
         {% endfor %}
     </ul>
+</section>
+
+
+<!-- Call To Action -->
+<section class="grid grid-cols-3">
+
+    <!-- Left Column / Text -->
+    <div>
+        <h2>{{ page.cta.heading_html }}</h2>
+        <div>
+            {{ page.cta.description_html }}
+        </div>
+        <a href="{{ page.cta.button.url }}">{{ page.cta.button.url }}</a>
+    </div>
+
+    <!-- Right Column / Image -->
+    <div class="col-span-2 bg-contain bg-center bg-no-repeat" style="background-image: url('{{ page.cta.image_path }}');"></div>
 </section>

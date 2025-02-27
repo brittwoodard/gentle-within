@@ -46,6 +46,14 @@ font-family: ibarra-real-nova, serif; 400, 700
         @apply mb-0
     }
 
+    ul {
+        @apply list-disc marker:text-feature
+    }
+
+    li {
+        @apply mb-4 marker:text-feature
+    }
+
 }
 
 

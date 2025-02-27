@@ -364,6 +364,24 @@ p {
 p:last-child {
   margin-bottom: 0px;
 }
+ul {
+  list-style-type: disc;
+}
+ul *::marker {
+  color: rgb(179 123 100 );
+}
+ul::marker {
+  color: rgb(179 123 100 );
+}
+li {
+  margin-bottom: 1rem;
+}
+li *::marker {
+  color: rgb(179 123 100 );
+}
+li::marker {
+  color: rgb(179 123 100 );
+}
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -676,6 +694,12 @@ p:last-child {
 .top-\[10\%\] {
   top: 10%;
 }
+.left-\[60\%\] {
+  left: 60%;
+}
+.top-\[12\%\] {
+  top: 12%;
+}
 .z-10 {
   z-index: 10;
 }
@@ -688,11 +712,11 @@ p:last-child {
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
 .m-2 {
   margin: 0.5rem;
@@ -732,23 +756,23 @@ p:last-child {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.ml-0 {
+  margin-left: 0px;
+}
 .ml-4 {
   margin-left: 1rem;
 }
 .ml-auto {
   margin-left: auto;
 }
+.mr-8 {
+  margin-right: 2rem;
+}
 .mt-4 {
   margin-top: 1rem;
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.ml-0 {
-  margin-left: 0px;
-}
-.mr-8 {
-  margin-right: 2rem;
 }
 .block {
   display: block;
@@ -780,6 +804,9 @@ p:last-child {
 .min-h-\[34vh\] {
   min-height: 34vh;
 }
+.min-h-\[54vh\] {
+  min-height: 54vh;
+}
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
@@ -806,9 +833,6 @@ p:last-child {
 }
 .list-none {
   list-style-type: none;
-}
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -886,6 +910,15 @@ p:last-child {
 .bg-transparent {
   background-color: transparent;
 }
+.bg-contain {
+  background-size: contain;
+}
+.bg-center {
+  background-position: center;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -919,11 +952,14 @@ p:last-child {
 .pb-20 {
   padding-bottom: 5rem;
 }
+.pb-8 {
+  padding-bottom: 2rem;
+}
 .pt-24 {
   padding-top: 6rem;
 }
-.pb-8 {
-  padding-bottom: 2rem;
+.pr-20 {
+  padding-right: 5rem;
 }
 .text-left {
   text-align: left;

@@ -1,0 +1,60 @@
+---
+layout: default
+heading_html: Let's <em>Connect</em>
+description_html: |
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia</p>
+image:
+  image_path: /uploads/temporary.jpg
+  image_focus:
+---
+
+<section class="grid grid-cols-2">
+
+    <!-- Left Column / Image -->
+    <div class="bg-image-style min-h-[60vh]"
+        style="background-image: url({{ page.image.image_path }}); background-position: {{ page.image.image_focus }};">
+    </div>
+
+    <!-- Right Column / Text -->
+    <div>
+        <h1>{{ page.heading_html }}</h1>
+        <div>
+            {{ page.description_html }}
+        </div>
+
+        <!-- Contact Form -->
+        <form name="contact" method="post" data-netlify="" action="/contact-thank-you.html" onSubmit="submit"
+            data-netlify-honeypot="bot-field">
+            <input class="hidden" name="bot-field">
+
+            <div class="grid sm:grid-cols-2 gap-8 mb-4">
+                <div>
+                    <input type="text" id="first-name" name="first-name" required
+                        class="block border-b border-dark bg-transparent w-full rounded-none">
+                    <label for="first-name" class="font-serif lowercase mt-2 block">First Name:</label>
+                </div>
+
+                <div>
+                    <input type="text" id="last-name" name="last-name"
+                        class="block border-b border-dark bg-transparent w-full rounded-none">
+                    <label for="last-name" class="font-serif lowercase mt-2 block">Last Name:</label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <input type="email" id="email" name="email" required
+                    class="block border-b border-dark bg-transparent w-full rounded-none">
+                <label for="email" class="font-serif lowercase mt-2 block">Email:</label>
+            </div>
+
+            <div>
+                <textarea id="message" name="message" required rows="8" placeholder="Message"
+                    class="border border-dark bg-transparent w-full p-2 text-dark font-sans placeholder:font-serif placeholder:text-dark lowercase rounded-none"></textarea>
+            </div>
+
+            <div class="flex justify-end">
+                <button type="submit" class="link mt-4">Send</button>
+            </div>
+        </form>
+    </div>
+</section>

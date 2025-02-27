@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- Header Section -->
-<section class="grid grid-cols-3 bg-main py-20 lg:py-28 px-8 lg:px-20">
+<section class="grid grid-cols-3 bg-main section-padding">
 
     <!-- Left Column / Text -->
     <div class="col-span-2 lg:w-[80%] flex items-center">
@@ -21,7 +21,7 @@ layout: default
 
 
 <!-- Benefits Section -->
-<section class="bg-dark py-20 lg:py-28 px-8 lg:px-20">
+<section class="bg-dark section-padding">
     <h2 class="text-2xl font-serif text-white text-center mb-4 capitalize">{{ page.benefits.heading_html }}</h2>
 
     {% assign half_size = page.benefits.benefits.size | divided_by: 2 %}
@@ -75,7 +75,7 @@ layout: default
 
 
 <!-- Approach / Methodology Section -->
-<section class="relative grid grid-cols-3 gap-20 bg-main py-20 lg:py-28 px-8 lg:px-20">
+<section class="relative grid grid-cols-3 gap-20 bg-main section-padding">
 
     <!-- Left Column / Text -->
     <div class="col-span-2 flex items-center">
@@ -97,7 +97,7 @@ layout: default
 
 
 <!-- FAQ Section -->
-<section class="bg-dark text-white py-20 lg:py-28 px-8 lg:px-20">
+<section class="bg-dark text-white section-padding">
     <h2 class="text-center font-serif text-2xl text-white mb-4">{{ page.faq.heading_html }}</h2>
     <ul class="list-none ml-0">
         {% for item in page.faq.questions %}
@@ -118,17 +118,19 @@ layout: default
 
 
 <!-- Call To Action -->
-<section class="grid grid-cols-3">
+<section class="grid grid-cols-3 py-20 lg:py-28">
 
     <!-- Left Column / Text -->
-    <div>
-        <h2>{{ page.cta.heading_html }}</h2>
+    <div class="px-8 lg:px-20 flex items-center">
         <div>
-            {{ page.cta.description_html }}
+            <h2 class="font-serif text-2xl text-dark mb-2 capitalize">{{ page.cta.heading_html }}</h2>
+            <div>
+                {{ page.cta.description_html }}
+            </div>
+            <a class="button mt-4" href="{{ page.cta.button.url }}">{{ page.cta.button.text }}</a>
         </div>
-        <a href="{{ page.cta.button.url }}">{{ page.cta.button.url }}</a>
     </div>
 
     <!-- Right Column / Image -->
-    <div class="col-span-2 bg-contain bg-center bg-no-repeat" style="background-image: url('{{ page.cta.image_path }}');"></div>
+    <div class="col-span-2 bg-contain bg-center bg-no-repeat min-h-[40vh]" style="background-image: url('{{ page.cta.image_path }}');"></div>
 </section>

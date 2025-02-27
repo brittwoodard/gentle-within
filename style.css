@@ -60,10 +60,14 @@ font-family: ibarra-real-nova, serif; 400, 700
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
 @layer components {
+    /* Padding */
+    .section-padding {
+        @apply py-20 lg:py-28 px-8 lg:px-20
+    }
 
     /* Buttons */
     .button {
-        @apply bg-feature text-white py-2 px-4 inline-block font-serif tracking-wider text-lg mt-4
+        @apply bg-feature text-white py-2 px-4 inline-block font-serif tracking-wider text-lg mt-4 capitalize
     }
 
     .button:hover {

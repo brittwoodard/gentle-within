@@ -722,6 +722,18 @@ li::marker {
 .top-\[23\%\] {
   top: 23%;
 }
+.right-0 {
+  right: 0px;
+}
+.top-\[26\%\] {
+  top: 26%;
+}
+.top-\[19\%\] {
+  top: 19%;
+}
+.top-\[18\%\] {
+  top: 18%;
+}
 .z-10 {
   z-index: 10;
 }
@@ -745,6 +757,12 @@ li::marker {
 }
 .m-2 {
   margin: 0.5rem;
+}
+.m-\[20\%\] {
+  margin: 20%;
+}
+.m-\[10\%\] {
+  margin: 10%;
 }
 .mx-2 {
   margin-left: 0.5rem;
@@ -795,6 +813,18 @@ li::marker {
 .mb-20 {
   margin-bottom: 5rem;
 }
+.mt-20 {
+  margin-top: 5rem;
+}
+.mt-16 {
+  margin-top: 4rem;
+}
+.mt-12 {
+  margin-top: 3rem;
+}
+.mb-\[10\%\] {
+  margin-bottom: 10%;
+}
 .block {
   display: block;
 }
@@ -819,6 +849,12 @@ li::marker {
 .h-screen {
   height: 100vh;
 }
+.h-\[43vh\] {
+  height: 43vh;
+}
+.h-20 {
+  height: 5rem;
+}
 .min-h-\[30vh\] {
   min-height: 30vh;
 }
@@ -836,6 +872,9 @@ li::marker {
 }
 .min-h-\[70vh\] {
   min-height: 70vh;
+}
+.min-h-\[55vh\] {
+  min-height: 55vh;
 }
 .w-\[60\%\] {
   width: 60%;
@@ -1008,6 +1047,9 @@ li::marker {
 .pt-28 {
   padding-top: 7rem;
 }
+.pt-20 {
+  padding-top: 5rem;
+}
 .text-left {
   text-align: left;
 }
@@ -1163,6 +1205,9 @@ li::marker {
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .md\:m-0 {
+    margin: 0px;
+  }
   .md\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -1187,6 +1232,9 @@ li::marker {
   }
   .md\:hidden {
     display: none;
+  }
+  .md\:h-0 {
+    height: 0px;
   }
   .md\:max-h-\[40vh\] {
     max-height: 40vh;
@@ -1270,6 +1318,15 @@ li::marker {
   .lg\:top-\[12\%\] {
     top: 12%;
   }
+  .lg\:right-\[14\%\] {
+    right: 14%;
+  }
+  .lg\:top-\[20\%\] {
+    top: 20%;
+  }
+  .lg\:m-0 {
+    margin: 0px;
+  }
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1278,6 +1335,9 @@ li::marker {
   }
   .lg\:mr-12 {
     margin-right: 3rem;
+  }
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
   .lg\:block {
     display: block;
@@ -1314,6 +1374,9 @@ li::marker {
   }
   .lg\:gap-20 {
     gap: 5rem;
+  }
+  .lg\:p-0 {
+    padding: 0px;
   }
   .lg\:px-0 {
     padding-left: 0px;

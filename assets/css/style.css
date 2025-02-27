@@ -782,6 +782,9 @@ p:last-child {
 .min-h-\[50vh\] {
   min-height: 50vh;
 }
+.min-h-\[40vh\] {
+  min-height: 40vh;
+}
 .w-\[60\%\] {
   width: 60%;
 }
@@ -865,6 +868,10 @@ p:last-child {
 .rounded-t-\[50\%\] {
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+}
+.rounded-t-\[40\%\] {
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
 }
 .border {
   border-width: 1px;
@@ -1050,6 +1057,31 @@ p:last-child {
   transition-duration: 500ms;
 }
 
+.focus\:border-red-500:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+.focus\:border-feature:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(179 123 100 / var(--tw-border-opacity));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:ring-red-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(239 68 68 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-feature:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(179 123 100 / var(--tw-ring-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1094,6 +1126,12 @@ p:last-child {
   .md\:hidden {
     display: none;
   }
+  .md\:max-h-\[50vh\] {
+    max-height: 50vh;
+  }
+  .md\:max-h-\[40vh\] {
+    max-height: 40vh;
+  }
   .md\:min-h-\[28vh\] {
     min-height: 28vh;
   }
@@ -1130,6 +1168,13 @@ p:last-child {
   .md\:gap-8 {
     gap: 2rem;
   }
+  .md\:gap-20 {
+    gap: 5rem;
+  }
+  .md\:rounded-t-\[50\%\] {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -1159,14 +1204,29 @@ p:last-child {
   .lg\:mr-12 {
     margin-right: 3rem;
   }
+  .lg\:block {
+    display: block;
+  }
   .lg\:h-\[60vh\] {
     height: 60vh;
+  }
+  .lg\:h-full {
+    height: 100%;
+  }
+  .lg\:h-\[100\%\] {
+    height: 100%;
   }
   .lg\:min-h-\[40vh\] {
     min-height: 40vh;
   }
   .lg\:min-h-\[70vh\] {
     min-height: 70vh;
+  }
+  .lg\:min-h-\[60vh\] {
+    min-height: 60vh;
+  }
+  .lg\:min-h-\[100\%\] {
+    min-height: 100%;
   }
   .lg\:w-\[100\%\] {
     width: 100%;

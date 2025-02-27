@@ -8,15 +8,18 @@ image:
   image_focus:
 ---
 
-<section class="grid grid-cols-2 gap-20 py-20 lg:py-28 px-8 lg:px-20 bg-light">
+<section class="grid md:grid-cols-2 md:gap-20 py-20 lg:py-28 px-8 lg:px-20 bg-light">
 
     <!-- Left Column / Image -->
-    <div class="bg-image-style min-h-[60vh] rounded-t-[50%]"
-        style="background-image: url('{{ page.image.image_path }}'); background-position: {{ page.image.image_focus }};">
+    <div class="flex lg:block items-center w-full">
+        <div class="bg-image-style h-[50vh] md:max-h-[40vh] lg:min-h-[100%] w-full rounded-t-[50%] mb-12 md:mb-0" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000"
+            style="background-image: url('{{ page.image.image_path }}'); background-position: {{ page.image.image_focus }};">
+        </div>
     </div>
 
+
     <!-- Right Column / Text -->
-    <div class="">
+    <div data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
         <h1 class="font-serif text-3xl text-dark mb-4">{{ page.heading_html }}</h1>
         <div>
             {{ page.description_html }}
@@ -31,25 +34,25 @@ image:
                 <div>
                     <input type="text" id="first-name" name="first-name" required
                     placeholder="First Name"
-                    class="border border-dark bg-transparent w-full p-2 placeholder:text-dark rounded-none">
+                    class="border border-dark bg-transparent w-full p-2 placeholder:text-dark rounded-none focus:border-feature focus:ring-feature focus:outline-none">
                 </div>
 
                 <div>
                     <input type="text" id="last-name" name="last-name"
                     placeholder="Last Name"
-                    class="border border-dark bg-transparent w-full p-2 placeholder:text-dark rounded-none">
+                    class="border border-dark bg-transparent w-full p-2 placeholder:text-dark rounded-none focus:border-feature focus:ring-feature focus:outline-none">
                 </div>
             </div>
 
             <div class="mb-2">
                 <input type="email" id="email" name="email" required
                 placeholder="Email"
-                class="border border-dark bg-transparent w-full p-2 font-sans placeholder:text-dark rounded-none">
+                class="border border-dark bg-transparent w-full p-2 font-sans placeholder:text-dark rounded-none focus:border-feature focus:ring-feature focus:outline-none">
             </div>
 
             <div>
                 <textarea id="message" name="message" required rows="8" placeholder="Message"
-                    class="border border-dark bg-transparent w-full p-2 placeholder:text-dark rounded-none"></textarea>
+                    class="border border-dark bg-transparent w-full p-2 placeholder:text-dark rounded-none focus:border-feature focus:ring-feature focus:outline-none"></textarea>
             </div>
 
             <div class="flex justify-start">

@@ -373,9 +373,6 @@ ul *::marker {
 ul::marker {
   color: rgb(179 123 100 );
 }
-li {
-  margin-bottom: 1rem;
-}
 li *::marker {
   color: rgb(179 123 100 );
 }
@@ -688,23 +685,20 @@ li::marker {
 .left-\[20\%\] {
   left: 20%;
 }
+.left-\[60\%\] {
+  left: 60%;
+}
+.right-\[14\%\] {
+  right: 14%;
+}
 .right-\[15\%\] {
   right: 15%;
 }
 .top-\[10\%\] {
   top: 10%;
 }
-.left-\[60\%\] {
-  left: 60%;
-}
 .top-\[12\%\] {
   top: 12%;
-}
-.right-\[20\%\] {
-  right: 20%;
-}
-.right-\[14\%\] {
-  right: 14%;
 }
 .top-\[20\%\] {
   top: 20%;
@@ -746,10 +740,6 @@ li::marker {
   margin-top: 7rem;
   margin-bottom: 7rem;
 }
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -773,9 +763,6 @@ li::marker {
 }
 .ml-auto {
   margin-left: auto;
-}
-.mr-8 {
-  margin-right: 2rem;
 }
 .mt-4 {
   margin-top: 1rem;
@@ -873,11 +860,11 @@ li::marker {
 .gap-2 {
   gap: 0.5rem;
 }
-.gap-4 {
-  gap: 1rem;
-}
 .gap-20 {
   gap: 5rem;
+}
+.gap-4 {
+  gap: 1rem;
 }
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -906,9 +893,16 @@ li::marker {
 .border-b {
   border-bottom-width: 1px;
 }
+.border-b-0 {
+  border-bottom-width: 0px;
+}
 .border-dark {
   --tw-border-opacity: 1;
   border-color: rgb(102 118 108 / var(--tw-border-opacity));
+}
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 .bg-dark {
   --tw-bg-opacity: 1;
@@ -940,6 +934,9 @@ li::marker {
 .p-5p {
   padding: 5%;
 }
+.p-4 {
+  padding: 1rem;
+}
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -967,14 +964,11 @@ li::marker {
 .pb-20 {
   padding-bottom: 5rem;
 }
-.pb-8 {
-  padding-bottom: 2rem;
+.pr-20 {
+  padding-right: 5rem;
 }
 .pt-24 {
   padding-top: 6rem;
-}
-.pr-20 {
-  padding-right: 5rem;
 }
 .text-left {
   text-align: left;
@@ -1011,9 +1005,6 @@ li::marker {
 }
 .capitalize {
   text-transform: capitalize;
-}
-.italic {
-  font-style: italic;
 }
 .tracking-wide {
   letter-spacing: 0.025em;
@@ -1057,6 +1048,18 @@ li::marker {
 
 .last\:mb-0:last-child {
   margin-bottom: 0px;
+}
+
+.last\:border-b-4:last-child {
+  border-bottom-width: 4px;
+}
+
+.last\:border-b-2:last-child {
+  border-bottom-width: 2px;
+}
+
+.last\:border-b-\[1px\]:last-child {
+  border-bottom-width: 1px;
 }
 
 .hover\:text-feature:hover {
@@ -1106,9 +1109,6 @@ li::marker {
   }
   .md\:top-\[30\%\] {
     top: 30%;
-  }
-  .md\:right-\[10\%\] {
-    right: 10%;
   }
   .md\:order-last {
     order: 9999;
@@ -1199,9 +1199,6 @@ li::marker {
   }
   .lg\:top-\[27\%\] {
     top: 27%;
-  }
-  .lg\:right-\[18\%\] {
-    right: 18%;
   }
   .lg\:mb-0 {
     margin-bottom: 0px;

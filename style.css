@@ -51,7 +51,7 @@ font-family: ibarra-real-nova, serif; 400, 700
     }
 
     li {
-        @apply mb-4 marker:text-feature
+        @apply marker:text-feature
     }
 
 }

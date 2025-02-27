@@ -16,3 +16,26 @@ layout: default
     <!-- Right Column / Image -->
     <div class="bg-image-style" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
 </section>
+
+
+<!-- Benefits Section -->
+<section>
+    <h2>{{ page.benefits.heading_html }}</h2>
+
+    {% assign half_size = page.benefits.benefits.size | divided_by: 2 %}
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <ul>
+            {% for item in page.benefits.benefits limit: half_size %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+
+        <ul>
+            {% for item in page.benefits.benefits offset: half_size %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+

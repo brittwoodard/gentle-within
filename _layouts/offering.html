@@ -75,28 +75,30 @@ layout: default
 
 
 <!-- Approach / Methodology Section -->
-<section class="grid grid-cols-3">
+<section class="relative grid grid-cols-3 gap-20 bg-main py-20 lg:py-28 px-8 lg:px-20">
 
     <!-- Left Column / Text -->
-    <div class="col-span-2">
-        <h2>{{ page.approach.heading_html }}</h2>
-        <div>
-            {{ page.approach.description_html }}
+    <div class="col-span-2 flex items-center">
+        <div class="lg:w-[80%]">
+            <h2 class="font-serif text-2xl mb-2 text-dark capitalize">{{ page.approach.heading_html }}</h2>
+            <div>
+                {{ page.approach.description_html }}
+            </div>
+            <a class="button mt-8" href="{{ page.approach.button.url }}">{{ page.approach.button.text }}</a>
         </div>
-        <a href="{{ page.approach.button.url }}">{{ page.approach.button.text }}</a>
     </div>
 
     <!-- Right Column -->
-    <div class="relative bg-image-style" style="background-image: url('{{ page.approach.images.background-image.image_path }}'); background-position: {{ page.images.featured-image.image_path }};"></div>
+    <div class="relative bg-image-style bg-overlay medium min-h-[70vh]" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000" style="background-image: url('{{ page.approach.images.background-image.image_path }}'); background-position: {{ page.images.featured-image.image_path }};"></div>
 
     <!-- Floating Image -->
-    <div class="bg-image-style absolute top-[10%] md:top-[30%] lg:top-[27%] left-[20%] md:left-[10%] lg:left-[18%] z-10 h-[45vh] lg:h-[60vh] w-[70vw] md:w-[45vw] lg:w-[25vw] rounded-t-[15rem]" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000" data-aos-delay="500" style="background-image: url('{{ page.approach.images.featured-image.image_path }}'); background-position: {{ page.approach.images.featured-image.image_focus }};"></div>
+    <div class="bg-image-style absolute top-[20%] right-[14%] z-10 h-[45vh] lg:h-[60vh] w-[70vw] md:w-[45vw] lg:w-[25vw]" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000" data-aos-delay="500" style="background-image: url('{{ page.approach.images.featured-image.image_path }}'); background-position: {{ page.approach.images.featured-image.image_focus }};"></div>
 </section>
 
 
 <!-- FAQ Section -->
-<section>
-    <h2>{{ page.faq.heading_html }}</h2>
+<section class="bg-dark text-white py-20 lg:py-28 px-8 lg:px-20">
+    <h2 class="text-center font-serif text-2xl text-white mb-4">{{ page.faq.heading_html }}</h2>
     <ul class="list-none ml-0">
         {% for item in page.faq.questions %}
         <li x-data="{ open: false }" class="border-b border-dark my-8">

@@ -700,6 +700,15 @@ li::marker {
 .top-\[12\%\] {
   top: 12%;
 }
+.right-\[20\%\] {
+  right: 20%;
+}
+.right-\[14\%\] {
+  right: 14%;
+}
+.top-\[20\%\] {
+  top: 20%;
+}
 .z-10 {
   z-index: 10;
 }
@@ -810,6 +819,9 @@ li::marker {
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
+.min-h-\[70vh\] {
+  min-height: 70vh;
+}
 .w-\[60\%\] {
   width: 60%;
 }
@@ -863,6 +875,9 @@ li::marker {
 }
 .gap-4 {
   gap: 1rem;
+}
+.gap-20 {
+  gap: 5rem;
 }
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1092,6 +1107,9 @@ li::marker {
   .md\:top-\[30\%\] {
     top: 30%;
   }
+  .md\:right-\[10\%\] {
+    right: 10%;
+  }
   .md\:order-last {
     order: 9999;
   }
@@ -1181,6 +1199,9 @@ li::marker {
   }
   .lg\:top-\[27\%\] {
     top: 27%;
+  }
+  .lg\:right-\[18\%\] {
+    right: 18%;
   }
   .lg\:mb-0 {
     margin-bottom: 0px;

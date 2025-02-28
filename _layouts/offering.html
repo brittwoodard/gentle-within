@@ -3,13 +3,13 @@ layout: default
 ---
 
 <!-- Header Section -->
-<section class="md:grid md:grid-cols-3 bg-main section-padding">
+<section class="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 bg-main section-padding">
 
     <!-- Mobile / Top / Image -->
     <div class="md:hidden mb-12 bg-image-style min-h-[54vh] rounded-t-[50%]" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
 
     <!-- Left Column / Text -->
-    <div class="col-span-2 lg:w-[80%] flex items-center">
+    <div class="lg:col-span-2 lg:w-[80%] flex items-center">
         <div>
             <h1 class="font-serif text-3xl text-dark mb-2">{{ page.header.title_html }}</h1>
             <div>
@@ -19,7 +19,7 @@ layout: default
     </div>
 
     <!-- Right Column / Image -->
-    <div class="hidden md:block bg-image-style min-h-[54vh] rounded-t-[50%]" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
+    <div class="hidden md:block bg-image-style min-h-[45vh] lg:min-h-[54vh] rounded-t-[50%]" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
 </section>
 
 
@@ -52,13 +52,13 @@ layout: default
 
         <!-- Image / Left Column -->
         <div class="relative">
-            <div class="relative w-[65%] md:w-[75%] lg:w-[100%] bg-image-style h-[50vh] md:min-h-[80vh] bg-overlay light"
+            <div class="relative w-[65%] md:w-[75%] lg:w-[100%] bg-image-style h-[50vh] md:min-h-[75vh] lg:min-h-[80vh] bg-overlay light"
                 data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000"
                 style="background-image: url('{{ page.who-its-for.images.background-image.image_path }}'); background-position: {{ page.who-its-for.images.background-image.image_focus }};">
             </div>
 
             <!-- Floating Image -->
-            <div class="absolute top-[23%] lg:top-[12%] left-[20%] lg:left-[60%] z-10 h-[45vh] lg:h-[60vh] w-[70vw] md:w-[45vw] lg:w-[25vw] bg-image-style"
+            <div class="absolute top-[23%] md:top-[20%] lg:top-[12%] left-[20%] md:left-[10%] lg:left-[60%] z-10 h-[45vh] lg:h-[60vh] w-[70vw] md:w-[45vw] lg:w-[25vw] bg-image-style"
                 data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000" data-aos-delay="500"
                 style="background-image: url('{{ page.who-its-for.images.featured-image.image_path }}'); background-position: {{ page.who-its-for.images.featured-image.image_focus }};">
             </div>
@@ -68,7 +68,7 @@ layout: default
 
     <!-- Right Column -->
     <div class="flex items-center pt-28 pb-20 md:py-0 px-8 md:px-0">
-        <div class="md:pr-20" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
+        <div class="md:px-8 lg:pl-0 lg:pr-20" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
             <h1 class="font-serif text-dark text-2xl capitalize">{{ page.who-its-for.heading_html }}</h1>
             <p class="text-[1.2rem]">{{ page.who-its-for.description_html }}</p>
         </div>

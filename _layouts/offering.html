@@ -6,10 +6,10 @@ layout: default
 <section class="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 bg-main section-padding">
 
     <!-- Mobile / Top / Image -->
-    <div class="md:hidden mb-12 bg-image-style min-h-[54vh] rounded-t-[50%]" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
+    <div class="md:hidden mb-12 bg-image-style min-h-[54vh] rounded-t-[50%]" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
 
     <!-- Left Column / Text -->
-    <div class="lg:col-span-2 lg:w-[80%] flex items-center">
+    <div class="lg:col-span-2 lg:w-[80%] flex items-center" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
         <div>
             <h1 class="font-serif text-3xl text-dark mb-2">{{ page.header.title_html }}</h1>
             <div>
@@ -19,28 +19,30 @@ layout: default
     </div>
 
     <!-- Right Column / Image -->
-    <div class="hidden md:block bg-image-style min-h-[45vh] lg:min-h-[54vh] rounded-t-[50%]" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
+    <div class="hidden md:block bg-image-style min-h-[45vh] lg:min-h-[54vh] rounded-t-[50%]" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000" style="background-image: url('{{ page.header.image.image_path }}'); background-position: {{ page.header.image.image_focus }};"></div>
 </section>
 
 
 <!-- Benefits Section -->
 <section class="bg-dark section-padding">
-    <h2 class="text-2xl font-serif text-white md:text-center mb-4 capitalize">{{ page.benefits.heading_html }}</h2>
+    <div data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
+        <h2 class="text-2xl font-serif text-white md:text-center mb-4 capitalize">{{ page.benefits.heading_html }}</h2>
 
-    {% assign half_size = page.benefits.benefits.size | divided_by: 2 %}
+        {% assign half_size = page.benefits.benefits.size | divided_by: 2 %}
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-white ml-4 md:ml-0">
-        <ul>
-            {% for item in page.benefits.benefits limit: half_size %}
-            <li class="mb-4 last:mb-0">{{ item }}</li>
-            {% endfor %}
-        </ul>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-white ml-4 md:ml-0">
+            <ul>
+                {% for item in page.benefits.benefits limit: half_size %}
+                <li class="mb-4 last:mb-0">{{ item }}</li>
+                {% endfor %}
+            </ul>
 
-        <ul>
-            {% for item in page.benefits.benefits offset: half_size %}
-            <li class="mb-4 last:mb-0">{{ item }}</li>
-            {% endfor %}
-        </ul>
+            <ul>
+                {% for item in page.benefits.benefits offset: half_size %}
+                <li class="mb-4 last:mb-0">{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </section>
 
@@ -85,7 +87,7 @@ layout: default
 
     <!-- Text -->
     <div class="col-span-2 flex items-center mt-12 lg:mt-0">
-        <div class="lg:w-[80%]">
+        <div class="lg:w-[80%]" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
             <h2 class="font-serif text-2xl mb-2 text-dark capitalize">{{ page.approach.heading_html }}</h2>
             <div>
                 {{ page.approach.description_html }}
@@ -104,39 +106,43 @@ layout: default
 
 <!-- FAQ Section -->
 <section class="bg-dark text-white section-padding">
-    <h2 class="text-center font-serif text-2xl text-white mb-4">{{ page.faq.heading_html }}</h2>
-    <ul class="list-none ml-0">
-        {% for item in page.faq.questions %}
-        <li x-data="{ open: false }" class="border border-white p-4 border-b-0 last:border-b-[1px]">
-            <button @click="open = ! open" class="flex justify-between w-full">
-                <h3 class="text-left font-serif">{{item.question}}</h3>
+    <div data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
+        <h2 class="text-center font-serif text-2xl text-white mb-4">{{ page.faq.heading_html }}</h2>
+        <ul class="list-none ml-0">
+            {% for item in page.faq.questions %}
+            <li x-data="{ open: false }" class="border border-white p-4 border-b-0 last:border-b-[1px]">
+                <button @click="open = ! open" class="flex justify-between w-full">
+                    <h3 class="text-left font-serif">{{item.question}}</h3>
 
-                <span x-show="!open">→</span>
-                <span x-show="open">&nbsp;&nbsp;↓</span>
-            </button>
-            <div x-show="open" @click.outside="open = false" class="">
-                <p class="last:mb-0">{{item.answer_html}}</p>
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
+                    <span x-show="!open">→</span>
+                    <span x-show="open">&nbsp;&nbsp;↓</span>
+                </button>
+                <div x-show="open" @click.outside="open = false" class="">
+                    <p class="last:mb-0">{{item.answer_html}}</p>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </section>
 
 
 <!-- Call To Action -->
-<section class="grid md:grid-cols-2 py-20 lg:py-28">
+<section class="py-20 lg:py-28">
 
+    <div class="grid md:grid-cols-2" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
     <!-- Left Column / Text -->
-    <div class="px-8 lg:px-20 flex items-center">
-        <div>
-            <h2 class="font-serif text-2xl text-dark mb-2 capitalize">{{ page.cta.heading_html }}</h2>
+        <div class="px-8 lg:px-20 flex items-center">
             <div>
-                {{ page.cta.description_html }}
+                <h2 class="font-serif text-2xl text-dark mb-2 capitalize">{{ page.cta.heading_html }}</h2>
+                <div>
+                    {{ page.cta.description_html }}
+                </div>
+                <a class="button mt-4" href="{{ page.cta.button.url }}">{{ page.cta.button.text }}</a>
             </div>
-            <a class="button mt-4" href="{{ page.cta.button.url }}">{{ page.cta.button.text }}</a>
         </div>
-    </div>
 
-    <!-- Right Column / Image -->
-    <div class="order-first md:order-last mb-[10%] md:m-0 bg-contain bg-center bg-no-repeat h-20 md:min-h-40 lg:min-h-[40vh]" style="background-image: url('{{ page.cta.image_path }}');"></div>
+        <!-- Right Column / Image -->
+        <div class="order-first md:order-last mb-[10%] md:m-0 bg-contain bg-center bg-no-repeat h-20 md:min-h-40 lg:min-h-[40vh]" style="background-image: url('{{ page.cta.image_path }}');"></div>
+    </div>
 </section>

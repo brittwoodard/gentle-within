@@ -713,9 +713,6 @@ li::marker {
 .top-\[23\%\] {
   top: 23%;
 }
-.left-\[10\%\] {
-  left: 10%;
-}
 .z-10 {
   z-index: 10;
 }
@@ -789,9 +786,6 @@ li::marker {
 .mt-8 {
   margin-top: 2rem;
 }
-.mr-auto {
-  margin-right: auto;
-}
 .block {
   display: block;
 }
@@ -828,6 +822,9 @@ li::marker {
 .min-h-\[34vh\] {
   min-height: 34vh;
 }
+.min-h-\[45vh\] {
+  min-height: 45vh;
+}
 .min-h-\[54vh\] {
   min-height: 54vh;
 }
@@ -839,9 +836,6 @@ li::marker {
 }
 .min-h-\[70vh\] {
   min-height: 70vh;
-}
-.min-h-\[45vh\] {
-  min-height: 45vh;
 }
 .w-\[60\%\] {
   width: 60%;
@@ -1130,17 +1124,11 @@ li::marker {
   .md\:left-\[10\%\] {
     left: 10%;
   }
-  .md\:top-\[30\%\] {
-    top: 30%;
-  }
-  .md\:left-\[20\%\] {
-    left: 20%;
-  }
-  .md\:top-\[10\%\] {
-    top: 10%;
-  }
   .md\:top-\[20\%\] {
     top: 20%;
+  }
+  .md\:top-\[30\%\] {
+    top: 30%;
   }
   .md\:order-last {
     order: 9999;
@@ -1179,23 +1167,17 @@ li::marker {
   .md\:max-h-\[40vh\] {
     max-height: 40vh;
   }
+  .md\:min-h-40 {
+    min-height: 10rem;
+  }
   .md\:min-h-\[28vh\] {
     min-height: 28vh;
-  }
-  .md\:min-h-\[80vh\] {
-    min-height: 80vh;
-  }
-  .md\:min-h-\[45\] {
-    min-height: 45;
-  }
-  .md\:min-h-\[45vh\] {
-    min-height: 45vh;
   }
   .md\:min-h-\[75vh\] {
     min-height: 75vh;
   }
-  .md\:min-h-40 {
-    min-height: 10rem;
+  .md\:min-h-\[80vh\] {
+    min-height: 80vh;
   }
   .md\:w-\[100\%\] {
     width: 100%;
@@ -1206,14 +1188,14 @@ li::marker {
   .md\:w-\[45vw\] {
     width: 45vw;
   }
+  .md\:w-\[60vw\] {
+    width: 60vw;
+  }
   .md\:w-\[75\%\] {
     width: 75%;
   }
   .md\:w-\[80\%\] {
     width: 80%;
-  }
-  .md\:w-\[60vw\] {
-    width: 60vw;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1227,14 +1209,14 @@ li::marker {
   .md\:justify-end {
     justify-content: flex-end;
   }
+  .md\:gap-12 {
+    gap: 3rem;
+  }
   .md\:gap-20 {
     gap: 5rem;
   }
   .md\:gap-8 {
     gap: 2rem;
-  }
-  .md\:gap-12 {
-    gap: 3rem;
   }
   .md\:px-0 {
     padding-left: 0px;
@@ -1244,6 +1226,10 @@ li::marker {
     padding-left: 3rem;
     padding-right: 3rem;
   }
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1251,16 +1237,6 @@ li::marker {
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-  .md\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  .md\:pr-20 {
-    padding-right: 5rem;
-  }
-  .md\:pr-8 {
-    padding-right: 2rem;
   }
   .md\:text-center {
     text-align: center;
@@ -1322,11 +1298,11 @@ li::marker {
   .lg\:min-h-\[40vh\] {
     min-height: 40vh;
   }
-  .lg\:min-h-\[70vh\] {
-    min-height: 70vh;
-  }
   .lg\:min-h-\[54vh\] {
     min-height: 54vh;
+  }
+  .lg\:min-h-\[70vh\] {
+    min-height: 70vh;
   }
   .lg\:min-h-\[80vh\] {
     min-height: 80vh;
@@ -1368,10 +1344,10 @@ li::marker {
     padding-top: 7rem;
     padding-bottom: 7rem;
   }
-  .lg\:pr-20 {
-    padding-right: 5rem;
-  }
   .lg\:pl-0 {
     padding-left: 0px;
+  }
+  .lg\:pr-20 {
+    padding-right: 5rem;
   }
 }

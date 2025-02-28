@@ -789,6 +789,9 @@ li::marker {
 .mt-8 {
   margin-top: 2rem;
 }
+.mr-auto {
+  margin-right: auto;
+}
 .block {
   display: block;
 }
@@ -1191,6 +1194,9 @@ li::marker {
   .md\:min-h-\[75vh\] {
     min-height: 75vh;
   }
+  .md\:min-h-40 {
+    min-height: 10rem;
+  }
   .md\:w-\[100\%\] {
     width: 100%;
   }
@@ -1205,6 +1211,9 @@ li::marker {
   }
   .md\:w-\[80\%\] {
     width: 80%;
+  }
+  .md\:w-\[60vw\] {
+    width: 60vw;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1297,6 +1306,12 @@ li::marker {
   }
   .lg\:block {
     display: block;
+  }
+  .lg\:grid {
+    display: grid;
+  }
+  .lg\:hidden {
+    display: none;
   }
   .lg\:h-\[60vh\] {
     height: 60vh;

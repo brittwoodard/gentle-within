@@ -78,10 +78,10 @@ layout: default
 
 
 <!-- Approach / Methodology Section -->
-<section class="relative md:grid md:grid-cols-3 gap-20 bg-main section-padding">
+<section class="relative lg:grid lg:grid-cols-3 gap-20 bg-main section-padding">
 
-    <!-- Background Image (Mobile) -->
-    <div class="md:hidden relative bg-image-style bg-overlay medium min-h-[55vh]" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000" style="background-image: url('{{ page.approach.images.background-image.image_path }}'); background-position: {{ page.images.featured-image.image_path }};"></div>
+    <!-- Background Image (Mobile & Tablet) -->
+    <div class="lg:hidden relative bg-image-style bg-overlay medium min-h-[55vh] md:w-[60vw] ml-auto" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000" style="background-image: url('{{ page.approach.images.background-image.image_path }}'); background-position: {{ page.images.featured-image.image_path }};"></div>
 
     <!-- Text -->
     <div class="col-span-2 flex items-center mt-12 lg:mt-0">
@@ -95,7 +95,7 @@ layout: default
     </div>
 
     <!-- Background Image (Desktop) -->
-    <div class="hidden md:block relative bg-image-style bg-overlay medium min-h-[70vh]" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000" style="background-image: url('{{ page.approach.images.background-image.image_path }}'); background-position: {{ page.images.featured-image.image_path }};"></div>
+    <div class="hidden lg:block relative bg-image-style bg-overlay medium min-h-[70vh]" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000" style="background-image: url('{{ page.approach.images.background-image.image_path }}'); background-position: {{ page.images.featured-image.image_path }};"></div>
 
     <!-- Floating Image -->
     <div class="bg-image-style absolute top-[10%] lg:top-[20%] right-0 lg:right-[14%] z-10 h-[43vh] lg:h-[60vh] w-[70vw] md:w-[45vw] lg:w-[25vw]" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000" data-aos-delay="500" style="background-image: url('{{ page.approach.images.featured-image.image_path }}'); background-position: {{ page.approach.images.featured-image.image_focus }};"></div>
@@ -138,5 +138,5 @@ layout: default
     </div>
 
     <!-- Right Column / Image -->
-    <div class="order-first md:order-last mb-[10%] md:m-0 bg-contain bg-center bg-no-repeat h-20 lg:min-h-[40vh]" style="background-image: url('{{ page.cta.image_path }}');"></div>
+    <div class="order-first md:order-last mb-[10%] md:m-0 bg-contain bg-center bg-no-repeat h-20 md:min-h-40 lg:min-h-[40vh]" style="background-image: url('{{ page.cta.image_path }}');"></div>
 </section>

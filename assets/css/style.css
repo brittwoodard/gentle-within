@@ -855,6 +855,9 @@ li::marker {
 .flex-grow {
   flex-grow: 1;
 }
+.grow {
+  flex-grow: 1;
+}
 .cursor-pointer {
   cursor: pointer;
 }

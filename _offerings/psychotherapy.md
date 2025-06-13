@@ -62,6 +62,9 @@ faq:
    - question: Do you offer sliding scale rates or pro bono sessions?
      answer_html: |
        <p>Yes. I reserve a limited number of sliding scale therapy and Ayurvedic consultation spots for BIPOC, and low-income clients. Please inquire about current availability during your consultation call.</p>
+   - question: How do I get started?
+     answer_html: |
+       <p>Head over to the Contact page to reach out. Let me know which service you're interested in, and I’ll follow up with next steps or a link to book a free consultation call.</p>
 cta: 
   heading_html: Let's take the first step, <em>together</em>
   description_html: |

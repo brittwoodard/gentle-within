@@ -54,25 +54,19 @@ approach:
 faq: 
   heading_html: <em>Frequently</em> Asked Questions
   questions:
-   - question: Are Ayurvedic consultations medical treatment?
+   - question: What types of organizations do you consult with?
      answer_html: |
-       <p>No — Ayurvedic consultations are educational and wellness-oriented. They are not a substitute for licensed medical care or psychotherapy. These sessions are offered as part of my training in Ayurveda and are currently available at a sliding scale ($25–$50). If you’re seeking mental health support, please consider booking a psychotherapy session.</p>
-   - question: Can I work with you for both therapy and Ayurveda?
+       <p>I work with nonprofits, schools, wellness organizations, grassroots collectives, and mission-driven institutions seeking to center mental health, trauma-informed care, and cultural responsiveness in their work. Whether you're developing curriculum or reworking internal policies, I offer strategic and relational support.</p>
+   - question: What is your consulting rate and how are projects structured?
      answer_html: |
-       <p>It depends. Because of ethical and professional guidelines, I typically keep psychotherapy and Ayurvedic consultations separate. If you’re curious about integrating both approaches, we can discuss your goals during an initial call and determine the best path forward.</p>
-   - question: Do you offer virtual or in-person sessions?
-     answer_html: |
-       <p>At this time, I offer virtual sessions via a secure, HIPAA-compliant video platform. In-person sessions may be available upon request, depending on location and availability.</p>
-   - question: Do you offer sliding scale rates or pro bono sessions?
-     answer_html: |
-       <p>Yes. I reserve a limited number of sliding scale therapy and Ayurvedic consultation spots for BIPOC, and low-income clients. Please inquire about current availability during your consultation call.</p>
+       <p>My standard consulting rate is $150/hour. For larger projects (e.g. curriculum design, training series, or policy development), I also offer project-based packages. We’ll start with a free 30-minute discovery call to clarify your needs and co-create a scope that works for your team and budget.</p>
    - question: How do I get started?
      answer_html: |
        <p>Head over to the Contact page to reach out. Let me know which service you're interested in, and I’ll follow up with next steps or a link to book a free consultation call.</p>
 cta: 
   heading_html: Reading to bring <em>care</em> into the heart of your work?
   description_html: |
-    <p>Let’s explore how your organization can deepen its commitment to wellness, equity, and sustainable impact. This work begins with conversation—grounded in relationship, curiosity, and shared purpose. Submit an inquiry to get started, and we’ll move forward together from there.</p>
+    <p>Let’s explore how your organization can deepen its commitment to wellness, equity, and sustainable impact. This work begins with conversation, grounded in relationship, curiosity, and shared purpose. Submit an inquiry to get started, and we’ll move forward together from there.</p>
   button: 
     text: Submit an Inquiry
     url: 

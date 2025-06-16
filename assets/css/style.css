@@ -879,6 +879,9 @@ li::marker {
 .items-center {
   align-items: center;
 }
+.justify-start {
+  justify-content: flex-start;
+}
 .justify-center {
   justify-content: center;
 }
@@ -893,6 +896,9 @@ li::marker {
 }
 .gap-4 {
   gap: 1rem;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1021,6 +1027,9 @@ li::marker {
 .font-serif {
   font-family: ibarra-real-nova, serif;
 }
+.font-sans {
+  font-family: europa, sans-serif;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1072,6 +1081,16 @@ li::marker {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
+.placeholder\:text-dark::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(102 118 108 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-dark::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(102 118 108 / var(--tw-text-opacity));
+}
+
 .last\:mb-0:last-child {
   margin-bottom: 0px;
 }
@@ -1111,9 +1130,25 @@ li::marker {
   border-bottom-width: 2px;
 }
 
+.focus\:border-feature:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(179 123 100 / var(--tw-border-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.focus\:ring-feature:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(179 123 100 / var(--tw-ring-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 768px) {
@@ -1162,6 +1197,9 @@ li::marker {
   }
   .md\:hidden {
     display: none;
+  }
+  .md\:max-h-\[40vh\] {
+    max-height: 40vh;
   }
   .md\:min-h-40 {
     min-height: 10rem;
@@ -1299,6 +1337,9 @@ li::marker {
   }
   .lg\:min-h-\[80vh\] {
     min-height: 80vh;
+  }
+  .lg\:min-h-\[100\%\] {
+    min-height: 100%;
   }
   .lg\:w-\[100\%\] {
     width: 100%;

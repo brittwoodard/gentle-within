@@ -37,9 +37,6 @@ approach:
     <p>This is also a place to tend to grief, depression, and anxiety—experiences that can leave you feeling disconnected from yourself or overwhelmed by emotion. Together, we explore what's underneath, making room for self-understanding, regulation, and relief.</p>
     <p>Cultural identity and belonging are a vital part of this work. If you’ve felt unseen or unheard in other spaces, therapy here centers your lived experience. We invite the full complexity of who you are, your roots, your questions, your voice—into the room.</p>
     <p>Life doesn't pause for healing. Big changes, quiet burnout, shifts in relationships, they all ask something of us. This practice offers steady support through those transitions, helping you make sense of what’s unfolding and reconnect with the parts of you that may have gone quiet along the way.</p>
-  button: 
-    text: Schedule a free consultation
-    url: 
   images: 
     background-image: 
       image_path: /uploads/temporary.jpg
@@ -71,7 +68,7 @@ cta:
     <p>Starting therapy can feel like a big step—but you don’t have to do it alone. This 15-minute consultation is a chance to ask questions, share what’s on your mind, and see if working together feels like a good fit. There’s no pressure,just a space to connect.</p>
   button: 
     text: Schedule a free consultation
-    url: 
+    url: https://amy-b-pichardo.clientsecure.me/contact-widget
   image_path: /uploads/temporary-illustration.png
 seo: 
   hide-from-googe: true

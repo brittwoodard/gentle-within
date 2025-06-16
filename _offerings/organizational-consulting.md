@@ -41,9 +41,6 @@ approach:
     </ul>
     <p>Consulting is offered at $150/hour. Project-based pricing is available upon request.</p>
     <p>To begin, please complete the inquiry form so we can explore what support might look like for your organization.</p>
-  button: 
-    text: Submit an Inquiry
-    url: 
   images: 
     background-image: 
       image_path: /uploads/temporary.jpg
@@ -69,7 +66,7 @@ cta:
     <p>Let’s explore how your organization can deepen its commitment to wellness, equity, and sustainable impact. This work begins with conversation, grounded in relationship, curiosity, and shared purpose. Submit an inquiry to get started, and we’ll move forward together from there.</p>
   button: 
     text: Submit an Inquiry
-    url: 
+    url: https://amy-b-pichardo.clientsecure.me/contact-widget
   image_path: /uploads/temporary-illustration.png
 seo: 
   hide-from-googe: true

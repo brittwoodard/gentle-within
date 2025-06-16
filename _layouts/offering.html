@@ -92,7 +92,7 @@ layout: default
             <div>
                 {{ page.approach.description_html }}
             </div>
-            <a class="button mt-8" href="{{ page.approach.button.url }}">{{ page.approach.button.text }}</a>
+            {% include button-cta.html %}
         </div>
     </div>
 
@@ -138,7 +138,7 @@ layout: default
                 <div>
                     {{ page.cta.description_html }}
                 </div>
-                <a class="button mt-4" href="{{ page.cta.button.url }}">{{ page.cta.button.text }}</a>
+                {% include button-cta.html %}
             </div>
         </div>
 

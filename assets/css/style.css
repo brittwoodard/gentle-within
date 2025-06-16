@@ -837,6 +837,9 @@ li::marker {
 .min-h-\[70vh\] {
   min-height: 70vh;
 }
+.min-h-\[50vh\] {
+  min-height: 50vh;
+}
 .w-\[60\%\] {
   width: 60%;
 }
@@ -853,9 +856,6 @@ li::marker {
   width: 100%;
 }
 .flex-grow {
-  flex-grow: 1;
-}
-.grow {
   flex-grow: 1;
 }
 .cursor-pointer {

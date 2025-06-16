@@ -1,8 +1,9 @@
 ---
 layout: default
-heading_html: Let's <em>Connect</em>
+heading_html: <em>Contact</em> Me
 description_html: |
-  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia</p>
+  <p>If you’re interested in therapy services, have questions about how I work, or want to learn more about my offerings, I’d love to hear from you. Please complete the form below and I’ll get back to you within 1–2 business days.</p>
+  <p>Whether you’re ready to begin or just exploring, reaching out is the first step.</p>
 image:
   image_path: /uploads/temporary.jpg
   image_focus:
@@ -10,56 +11,28 @@ seo:
   hide-from-google: true
 ---
 
-<section class="grid md:grid-cols-2 md:gap-20 section-padding bg-light">
+<section class="grid md:grid-cols-3 md:gap-20 section-padding bg-light">
 
     <!-- Left Column / Image -->
     <div class="flex lg:block items-center w-full">
-        <div class="bg-image-style h-[50vh] md:max-h-[40vh] lg:min-h-[100%] w-full rounded-t-[50%] mb-12 md:mb-0" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000"
+        <div class="bg-image-style min-h-[50vh] w-full rounded-t-[50%] mb-12 md:mb-0" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000"
             style="background-image: url('{{ page.image.image_path }}'); background-position: {{ page.image.image_focus }};">
         </div>
     </div>
 
 
     <!-- Right Column / Text -->
-    <div data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
-        <h1 class="font-serif text-3xl text-dark mb-4">{{ page.heading_html }}</h1>
-        <div>
-            {{ page.description_html }}
-        </div>
-
-        <!-- Contact Form -->
-        <form class="mt-8" name="contact" method="post" data-netlify="" action="/contact-thank-you.html" onSubmit="submit"
-            data-netlify-honeypot="bot-field">
-            <input class="hidden" name="bot-field">
-
-            <div class="grid sm:grid-cols-2 gap-2 mb-2">
-                <div>
-                    <input type="text" id="first-name" name="first-name" required
-                    placeholder="First Name"
-                    class="border border-dark bg-transparent w-full p-2 placeholder:text-dark rounded-none focus:border-feature focus:ring-feature focus:outline-none">
-                </div>
-
-                <div>
-                    <input type="text" id="last-name" name="last-name"
-                    placeholder="Last Name"
-                    class="border border-dark bg-transparent w-full p-2 placeholder:text-dark rounded-none focus:border-feature focus:ring-feature focus:outline-none">
-                </div>
-            </div>
-
-            <div class="mb-2">
-                <input type="email" id="email" name="email" required
-                placeholder="Email"
-                class="border border-dark bg-transparent w-full p-2 font-sans placeholder:text-dark rounded-none focus:border-feature focus:ring-feature focus:outline-none">
-            </div>
-
+    <div class="md:col-span-2 flex items-center justify-center">
+        <div data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
+            <h1 class="font-serif text-3xl text-dark mb-4">{{ page.heading_html }}</h1>
             <div>
-                <textarea id="message" name="message" required rows="8" placeholder="Message"
-                    class="border border-dark bg-transparent w-full p-2 placeholder:text-dark rounded-none focus:border-feature focus:ring-feature focus:outline-none"></textarea>
+                {{ page.description_html }}
             </div>
 
-            <div class="flex justify-start">
-                <button type="submit" class="button mt-4">Send</button>
+            <!-- Contact Button -->
+            <div>
+                <a href="https://amy-b-pichardo.clientsecure.me/contact-widget" class="button">Get in touch</a>
             </div>
-        </form>
+        </div> 
     </div>
 </section>

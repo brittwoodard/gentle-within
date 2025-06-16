@@ -36,9 +36,6 @@ approach:
     <p>Each consultation begins with a 75-minute intake, where we explore your unique constitution (dosha) and the imbalances you may be experiencing. You'll receive personalized guidance that may include dietary and lifestyle recommendations, mind-body practices, and gentle shifts aligned with Ayurvedic tradition. Optional follow-up sessions are available for deeper integration and ongoing support.</p>
     <p>You'll also receive a written summary of your plan, including suggestions tailored to your needs and rhythms.</p>
     <p><em>These sessions are offered on a sliding scale of $25–$50 and are part of my supervised training as an Ayurvedic Health Counselor. They are intended for educational and wellness purposes only, and are not a substitute for licensed medical care or psychotherapy. If you're seeking mental health support, I invite you to explore psychotherapy services instead.</em></p>
-  button: 
-    text: Schedule a free consultation
-    url: 
   images: 
     background-image: 
       image_path: /uploads/temporary.jpg
@@ -70,7 +67,7 @@ cta:
     <p>Let’s connect. This free 15-minute consultation is a chance to explore whether Ayurvedic support is right for you. We’ll talk about what you’re looking for, what these sessions involve, and how we might work together in a way that feels supportive and aligned.</p>
   button: 
     text: Schedule a free consultation
-    url: 
+    url: https://amy-b-pichardo.clientsecure.me/contact-widget
   image_path: /uploads/temporary-illustration.png
 seo: 
   hide-from-googe: true

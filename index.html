@@ -3,9 +3,6 @@ layout: default
 header: 
   title: Gentle Within
   subtitle: A holistic mental health practice
-  button: 
-    text: Schedule a free Consultation
-    url: 
   images: 
     background-image: 
       image_path: /uploads/temporary.jpg
@@ -18,9 +15,6 @@ who-you-serve:
   heading_html: "Who We <em>Help</em>"
   description_html: |
     <p>Gentle Within is for individuals seeking compassionate support to overcome life’s challenges. We work with people who are struggling with stress, anxiety, trauma, or emotional blocks, offering a safe space for healing and personal growth. If you’re ready to work through these challenges and create lasting change, Gentle Within is here to help.</p>
-  button:
-    text: Schedule a free Consultation
-    url:     
 approach:
   image: 
     image_path: /uploads/temporary.jpg
@@ -82,12 +76,12 @@ testimonials:
     image_path: /uploads/temporary-testimonials.jpg
     image_focus: bottom right
 cta: 
-  heading: Get Started
+  heading: Ready to begin your healing journey?
   description_html: |
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+    <p>Whether you're feeling stuck, overwhelmed, or simply ready for change, I’m here to support you. Click below to schedule a free 30 min consultation or learn more about how we can work together. You don’t have to navigate this alone.</p>
   button: 
     text: Schedule a free Consultation
-    url: /discovery
+    url: /discover
   images: 
     background-image: 
       image_path: /uploads/temporary.jpg
@@ -118,7 +112,7 @@ seo:
     <div class="lg:w-[60%]" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
       <h1 class="font-serif text-dark text-3xl mb-2">{{ page.header.title }}</h1>
       <p class="text-[1.2rem]">{{ page.header.subtitle }}</p>
-      <a class="button" href="{{ page.header.button.url }}">{{ page.header.button.text }}</a>
+      {% include button-cta.html %}
     </div>
   </div>
 
@@ -135,7 +129,7 @@ seo:
     <div class="mb-4">
       {{ page.who-you-serve.description_html }}
     </div>
-    <a class="button" href="{{ page.who-you-serve.button.url }}">{{ page.who-you-serve.button.text }}</a>
+    {% include button-cta.html %}
   </div>
 </section>
 
@@ -225,7 +219,7 @@ seo:
       <div class="w-[80%]">
         {{ page.cta.description_html }}
       </div>
-      <a class="button" href="{{ page.cta.button.url }}">{{ page.cta.button.text }}</a>
+      {% include button-cta.html %}
     </div>
   </div>
 

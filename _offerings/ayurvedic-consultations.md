@@ -67,7 +67,7 @@ cta:
     <p>Let’s connect. This free 15-minute consultation is a chance to explore whether Ayurvedic support is right for you. We’ll talk about what you’re looking for, what these sessions involve, and how we might work together in a way that feels supportive and aligned.</p>
   button: 
     text: Schedule a free consultation
-    url: https://amy-b-pichardo.clientsecure.me/contact-widget
+    url: /discover
   image_path: /uploads/temporary-illustration.png
 seo: 
   hide-from-googe: true

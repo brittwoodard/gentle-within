@@ -16,7 +16,7 @@ footer:
    - title: Contact
      url: /contact
    - title: Book a Discovery Call
-     url: https://amy-b-pichardo.clientsecure.me/contact-widget
+     url: /discover
   services: 
    - title: Psychotherapy
      url: /psychotherapy

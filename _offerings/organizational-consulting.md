@@ -66,7 +66,7 @@ cta:
     <p>Let’s explore how your organization can deepen its commitment to wellness, equity, and sustainable impact. This work begins with conversation, grounded in relationship, curiosity, and shared purpose. Submit an inquiry to get started, and we’ll move forward together from there.</p>
   button: 
     text: Submit an Inquiry
-    url: https://amy-b-pichardo.clientsecure.me/contact-widget
+    url: /discover
   image_path: /uploads/temporary-illustration.png
 seo: 
   hide-from-googe: true

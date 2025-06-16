@@ -68,7 +68,7 @@ cta:
     <p>Starting therapy can feel like a big step—but you don’t have to do it alone. This 15-minute consultation is a chance to ask questions, share what’s on your mind, and see if working together feels like a good fit. There’s no pressure,just a space to connect.</p>
   button: 
     text: Schedule a free consultation
-    url: https://amy-b-pichardo.clientsecure.me/contact-widget
+    url: /discover
   image_path: /uploads/temporary-illustration.png
 seo: 
   hide-from-googe: true

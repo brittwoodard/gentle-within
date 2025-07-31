@@ -1,0 +1,16 @@
+<!-- Healing Approaches -->
+<section class="grid md:grid-cols-2 md:gap-8 lg:gap-20 py-20 lg:py-28 px-8 lg:px-20" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
+
+  <!-- Left Column / Image -->
+  <div class="bg-image-style min-h-[60vh] mb-12 md:mb-0" style="background-image: url('{{ page.approach.image.image_path }}'); background-position: {{ page.approach.image.image_focus }};"></div>
+
+  <!-- Right Column / Text -->
+  <div>
+  {% for item in page.approach.approaches %}
+    <div class="border-b border-dark mb-12 last:mb-0">
+      <h3 class="font-serif text-dark text-lg tracking-wide">{{ item.title }}</h3>
+      <p class="mb-4">{{ item.description }}</p>
+    </div>
+  {% endfor %}
+  </div>
+</section>

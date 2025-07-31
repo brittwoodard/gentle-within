@@ -6,7 +6,7 @@ header:
   description_html: |
     <p>If you're navigating trauma, anxiety, identity challenges, or relationship struggles, I offer a supportive space for healing and transformation. My therapeutic approach weaves together somatic, relational, and liberation-based practices.</p>
   image: 
-    image_path: /uploads/temporary.jpg
+    image_path: /uploads/gentle-within-4.jpg
     image_focus: 
 benefits: 
   heading_html: <em>Why</em> Psychotherapy?
@@ -25,11 +25,11 @@ who-its-for:
     <p>At Gentle Within, psychotherapy offers a space to slow down, be heard, and begin the work of healing—at your own pace, and in your own way. This work is for teens, adults, and couples ready to explore their inner world with support, care, and intention.</p>
   images: 
     background-image: 
-      image_path: /uploads/temporary.jpg
+      image_path: /uploads/background/gentle-within-background-1.jpg
       image_focus: 
     featured-image: 
-      image_path: /uploads/temporary.jpg
-      image_focus: 
+      image_path: /uploads/gentle-within-6.jpg
+      image_focus: bottom
 approach: 
   heading_html: What we <em>hold space</em> for
   description_html: |
@@ -39,10 +39,10 @@ approach:
     <p>Life doesn't pause for healing. Big changes, quiet burnout, shifts in relationships, they all ask something of us. This practice offers steady support through those transitions, helping you make sense of what’s unfolding and reconnect with the parts of you that may have gone quiet along the way.</p>
   images: 
     background-image: 
-      image_path: /uploads/temporary.jpg
+      image_path: /uploads/background/gentle-within-background-15.jpg
       image_focus: 
     featured-image: 
-      image_path: /uploads/temporary.jpg
+      image_path: /uploads/gentle-within-7.jpg
       image_focus: 
 faq: 
   heading_html: <em>Frequently</em> Asked Questions

@@ -831,9 +831,6 @@ li::marker {
 .min-h-\[45vh\] {
   min-height: 45vh;
 }
-.min-h-\[50vh\] {
-  min-height: 50vh;
-}
 .min-h-\[54vh\] {
   min-height: 54vh;
 }
@@ -891,14 +888,14 @@ li::marker {
 .justify-items-center {
   justify-items: center;
 }
+.gap-2 {
+  gap: 0.5rem;
+}
 .gap-20 {
   gap: 5rem;
 }
 .gap-4 {
   gap: 1rem;
-}
-.gap-2 {
-  gap: 0.5rem;
 }
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1024,11 +1021,11 @@ li::marker {
 .text-right {
   text-align: right;
 }
-.font-serif {
-  font-family: ibarra-real-nova, serif;
-}
 .font-sans {
   font-family: europa, sans-serif;
+}
+.font-serif {
+  font-family: ibarra-real-nova, serif;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -1102,12 +1099,6 @@ li::marker {
 .hover\:text-feature:hover {
   --tw-text-opacity: 1;
   color: rgb(179 123 100 / var(--tw-text-opacity));
-}
-
-.hover\:shadow-lg:hover {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:transition:hover {
@@ -1326,6 +1317,9 @@ li::marker {
   .lg\:h-\[60vh\] {
     height: 60vh;
   }
+  .lg\:min-h-\[100\%\] {
+    min-height: 100%;
+  }
   .lg\:min-h-\[40vh\] {
     min-height: 40vh;
   }
@@ -1337,9 +1331,6 @@ li::marker {
   }
   .lg\:min-h-\[80vh\] {
     min-height: 80vh;
-  }
-  .lg\:min-h-\[100\%\] {
-    min-height: 100%;
   }
   .lg\:w-\[100\%\] {
     width: 100%;

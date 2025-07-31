@@ -6,7 +6,7 @@ header:
   description_html: |
     <p>I collaborate with organizations to create trauma-informed, justice-centered policies, curricula, and wellness programs. This work is relational and strategic, tailored to meet your mission while supporting community and staff wellbeing.</p>
   image: 
-    image_path: /uploads/temporary.jpg
+    image_path: /uploads/gentle-within-10.jpg
     image_focus: 
 benefits: 
   heading_html: What working together <em>makes possible</em>
@@ -24,10 +24,10 @@ who-its-for:
     <p>This work is for organizations like yours—ones rooted in service, equity, and impact—who want to move beyond survival mode and build structures that support collective well-being from the inside out.</p>
   images: 
     background-image: 
-      image_path: /uploads/temporary.jpg
+      image_path: /uploads/background/gentle-within-background-10.jpg
       image_focus: 
     featured-image: 
-      image_path: /uploads/temporary.jpg
+      image_path: /uploads/gentle-within-12.jpg
       image_focus: 
 approach: 
   heading_html: What these sessions <em>include</em>
@@ -43,10 +43,10 @@ approach:
     <p>To begin, please complete the inquiry form so we can explore what support might look like for your organization.</p>
   images: 
     background-image: 
-      image_path: /uploads/temporary.jpg
+      image_path: /uploads/background/gentle-within-background-13.jpg
       image_focus: 
     featured-image: 
-      image_path: /uploads/temporary.jpg
+      image_path: /uploads/gentle-within-13.jpg
       image_focus: 
 faq: 
   heading_html: <em>Frequently</em> Asked Questions

@@ -7,7 +7,7 @@ header:
     <p>Ayurvedic consultations offer a path to deeper self-awareness, grounded energy, and inner alignment. Rooted in a tradition that honors the whole person—mind, body, and spirit, this work helps you understand your unique constitution and create daily habits that support your well-being.</p>
     <p>In these one-on-one sessions, we explore your unique constitution (dosha), uncover imbalances, and develop a personalized wellness plan that includes food, herbs, lifestyle shifts, and emotional support from an Ayurvedic perspective.</p>
   image: 
-    image_path: /uploads/temporary.jpg
+    image_path: /uploads/gentle-within-9.jpg
     image_focus: 
 benefits: 
   heading_html: Through this process, clients often <em>experience</em>...
@@ -25,11 +25,11 @@ who-its-for:
     <p>I'm currently completing formal training in Ayurvedic wellness and offering low-cost consultations as a student practitioner. These sessions are ideal if you're curious about Ayurveda and open to a collaborative approach grounded in learning, self-reflection, and care.</p>
   images: 
     background-image: 
-      image_path: /uploads/temporary.jpg
+      image_path: /uploads/background/gentle-within-background-3.jpg
       image_focus: 
     featured-image: 
-      image_path: /uploads/temporary.jpg
-      image_focus: 
+      image_path: /uploads/gentle-within-11.jpg
+      image_focus: 12% 50%
 approach: 
   heading_html: What these sessions <em>include</em>
   description_html: |
@@ -38,10 +38,10 @@ approach:
     <p><em>These sessions are offered on a sliding scale of $25–$50 and are part of my supervised training as an Ayurvedic Health Counselor. They are intended for educational and wellness purposes only, and are not a substitute for licensed medical care or psychotherapy. If you're seeking mental health support, I invite you to explore psychotherapy services instead.</em></p>
   images: 
     background-image: 
-      image_path: /uploads/temporary.jpg
-      image_focus: 
+      image_path: /uploads/background/gentle-within-background-8.jpg
+      image_focus: left
     featured-image: 
-      image_path: /uploads/temporary.jpg
+      image_path: /uploads/gentle-within-8.jpg
       image_focus: 
 faq: 
   heading_html: <em>Frequently</em> Asked Questions

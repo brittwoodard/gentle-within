@@ -67,7 +67,7 @@ cta:
   button: 
     text: Submit an Inquiry
     url: /discover
-  image_path: /uploads/temporary-illustration.png
+  image_path: /uploads/gentle-within-15.png
 seo: 
   hide-from-googe: true
 ---

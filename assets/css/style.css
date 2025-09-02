@@ -690,6 +690,9 @@ li::marker {
 .relative {
   position: relative;
 }
+.inset-0 {
+  inset: 0px;
+}
 .bottom-0 {
   bottom: 0px;
 }
@@ -714,11 +717,29 @@ li::marker {
 .top-\[23\%\] {
   top: 23%;
 }
+.right-2 {
+  right: 0.5rem;
+}
+.top-2 {
+  top: 0.5rem;
+}
+.right-\[3\%\] {
+  right: 3%;
+}
+.top-\[2\%\] {
+  top: 2%;
+}
+.left-\[3\%\] {
+  left: 3%;
+}
 .z-10 {
   z-index: 10;
 }
 .z-20 {
   z-index: 20;
+}
+.z-50 {
+  z-index: 50;
 }
 .order-first {
   order: -9999;
@@ -823,6 +844,12 @@ li::marker {
 .h-screen {
   height: 100vh;
 }
+.h-\[80vh\] {
+  height: 80vh;
+}
+.h-full {
+  height: 100%;
+}
 .min-h-\[30vh\] {
   min-height: 30vh;
 }
@@ -844,6 +871,9 @@ li::marker {
 .min-h-\[70vh\] {
   min-height: 70vh;
 }
+.min-h-\[65vh\] {
+  min-height: 65vh;
+}
 .w-\[60\%\] {
   width: 60%;
 }
@@ -859,6 +889,9 @@ li::marker {
 .w-full {
   width: 100%;
 }
+.w-11\/12 {
+  width: 91.666667%;
+}
 .flex-grow {
   flex-grow: 1;
 }
@@ -871,8 +904,14 @@ li::marker {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+.flex-col {
+  flex-direction: column;
+}
 .flex-wrap {
   flex-wrap: wrap;
+}
+.items-start {
+  align-items: flex-start;
 }
 .items-center {
   align-items: center;
@@ -908,8 +947,14 @@ li::marker {
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 .rounded-none {
   border-radius: 0px;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 .rounded-t-\[15rem\] {
   border-top-left-radius: 15rem;
@@ -921,6 +966,9 @@ li::marker {
 }
 .border {
   border-width: 1px;
+}
+.border-0 {
+  border-width: 0px;
 }
 .border-b {
   border-bottom-width: 1px;
@@ -950,6 +998,13 @@ li::marker {
 }
 .bg-transparent {
   background-color: transparent;
+}
+.bg-black\/60 {
+  background-color: rgb(0 0 0 / 0.6);
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .bg-contain {
   background-size: contain;
@@ -1043,6 +1098,9 @@ li::marker {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-\[1\.5rem\] {
+  font-size: 1.5rem;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -1067,6 +1125,15 @@ li::marker {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 :root {
@@ -1104,6 +1171,16 @@ li::marker {
 .hover\:text-feature:hover {
   --tw-text-opacity: 1;
   color: rgb(179 123 100 / var(--tw-text-opacity));
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-dark:hover {
+  --tw-text-opacity: 1;
+  color: rgb(102 118 108 / var(--tw-text-opacity));
 }
 
 .hover\:transition:hover {
@@ -1227,6 +1304,9 @@ li::marker {
   .md\:w-\[80\%\] {
     width: 80%;
   }
+  .md\:w-3\/4 {
+    width: 75%;
+  }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1348,6 +1428,9 @@ li::marker {
   }
   .lg\:w-\[80\%\] {
     width: 80%;
+  }
+  .lg\:w-1\/2 {
+    width: 50%;
   }
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));

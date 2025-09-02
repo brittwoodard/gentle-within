@@ -14,7 +14,7 @@ seo:
 <section class="grid md:grid-cols-2 md:gap-20 section-padding bg-light">
 
     <!-- Left Column / Image -->
-    <div class="flex lg:block items-center w-full">
+    <div class="flex lg:block items-center w-full min-h-[65vh]">
         <div class="bg-image-style h-[50vh] md:max-h-[40vh] lg:min-h-[100%] w-full rounded-t-[50%] mb-12 md:mb-0" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000"
             style="background-image: url('{{ page.image.image_path }}'); background-position: {{ page.image.image_focus }};">
         </div>
@@ -22,45 +22,39 @@ seo:
 
 
     <!-- Right Column / Text -->
-    <div data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
-        <h1 class="font-serif text-3xl text-dark mb-4">{{ page.heading_html }}</h1>
+    <div class="flex flex-col justify-center items-start" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
         <div>
-            {{ page.description_html }}
+            <h1 class="font-serif text-3xl text-dark mb-4">{{ page.heading_html }}</h1>
+            <div>
+                {{ page.description_html }}
+            </div>
         </div>
 
-        <!-- Contact Form -->
-        <form class="mt-8" name="contact" method="post" data-netlify="" action="/contact-thank-you.html" onSubmit="submit"
-            data-netlify-honeypot="bot-field">
-            <input class="hidden" name="bot-field">
-
-            <div class="grid sm:grid-cols-2 gap-2 mb-2">
-                <div>
-                    <input type="text" id="first-name" name="first-name" required
-                    placeholder="First Name"
-                    class="border border-dark bg-transparent w-full p-2 placeholder:text-dark rounded-none focus:border-feature focus:ring-feature focus:outline-none">
-                </div>
-
-                <div>
-                    <input type="text" id="last-name" name="last-name"
-                    placeholder="Last Name"
-                    class="border border-dark bg-transparent w-full p-2 placeholder:text-dark rounded-none focus:border-feature focus:ring-feature focus:outline-none">
-                </div>
-            </div>
-
-            <div class="mb-2">
-                <input type="email" id="email" name="email" required
-                placeholder="Email"
-                class="border border-dark bg-transparent w-full p-2 font-sans placeholder:text-dark rounded-none focus:border-feature focus:ring-feature focus:outline-none">
-            </div>
-
-            <div>
-                <textarea id="message" name="message" required rows="8" placeholder="Message"
-                    class="border border-dark bg-transparent w-full p-2 placeholder:text-dark rounded-none focus:border-feature focus:ring-feature focus:outline-none"></textarea>
-            </div>
-
-            <div class="flex justify-start">
-                <button type="submit" class="button mt-4">Send</button>
-            </div>
-        </form>
+        <!-- Contact Button -->
+        <button id="openContact" class="button">
+            Contact Me
+        </button>
     </div>
+
+    <!-- Modal (only on this page) -->
+        <div id="contactModal" class="fixed inset-0 bg-black/60 flex items-center justify-center hidden z-50">
+        <div class="relative bg-white w-11/12 md:w-3/4 lg:w-1/2 h-[80vh] rounded-none shadow-lg overflow-hidden">
+            <button id="closeContact" class="absolute top-[2%] right-[3%] text-feature hover:text-dark text-[1.5rem]">
+            ✕
+            </button>
+            <iframe src="https://amy-b-pichardo.clientsecure.me/contact-widget" class="w-full h-full border-0"></iframe>
+        </div>
+        </div>
+
+        <script>
+        const openBtn = document.getElementById('openContact');
+        const closeBtn = document.getElementById('closeContact');
+        const modal = document.getElementById('contactModal');
+
+        openBtn.addEventListener('click', () => modal.classList.remove('hidden'));
+        closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
+        modal.addEventListener('click', e => {
+            if (e.target === modal) modal.classList.add('hidden');
+        });
+        </script>
 </section>

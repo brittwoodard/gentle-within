@@ -28,7 +28,7 @@ who-its-for:
       image_path: /uploads/background/gentle-within-background-3.jpg
       image_focus: 
     featured-image: 
-      image_path: /uploads/gentle-within-11.jpg
+      image_path: /uploads/gentle-within-14.jpg
       image_focus: 12% 50%
 approach: 
   heading_html: What these sessions <em>include</em>

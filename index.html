@@ -73,8 +73,8 @@ testimonials:
       <p>Can I just say thank you, no matter all the crazy thoughts I get dancing around my head you always find a way to help me make sense of them and i really appreciate it! No matter whether I'm misreading and misunderstanding absolutely everything you never make me feel crazy and that's a job on its own. Thank you for allowing me to decompress my million thoughts and still keeping me sane. You get a 10/10 Ms. Pichardo, all jokes aside, every patient deserves a therapist like you.</p>
      author: Laura
   background-image: 
-    image_path: /uploads/temporary-testimonials.jpg
-    image_focus: bottom right
+    image_path: /uploads/background/bg-midnight-2.png
+    image_focus: center right
 cta: 
   heading: Ready to begin your healing journey?
   description_html: |
@@ -123,9 +123,9 @@ seo:
 
 
 <!-- Who You Serve -->
-<section class="bg-light section-padding">
-  <div class="text-center lg:w-[80%] mx-auto" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
-    <h2 class="font-serif text-dark text-2xl capitalize mb-4">{{ page.who-you-serve.heading_html }}</h2>
+<section class="bg-midnight section-padding">
+  <div class="text-center lg:w-[80%] mx-auto text-light" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
+    <h2 class="font-serif text-2xl capitalize mb-4">{{ page.who-you-serve.heading_html }}</h2>
     <div class="mb-4">
       {{ page.who-you-serve.description_html }}
     </div>
@@ -181,7 +181,7 @@ seo:
 
 
 <!-- Testimonials Section -->
-<section class="bg-dark text-white py-12 lg:py-28 px-8 lg:px-20 bg-image-style" data-aos="fade" data-aos-offset="0" data-aos-duration="3000" style="background-image: url('{{ page.testimonials.background-image.image_path }}'); background-position: {{ page.testimonials.background-image.image_focus }};">
+<section class="bg-midnight text-white py-12 lg:py-28 px-8 lg:px-20 bg-image-style" data-aos="fade" data-aos-offset="0" data-aos-duration="3000" style="background-image: url('{{ page.testimonials.background-image.image_path }}'); background-position: {{ page.testimonials.background-image.image_focus }};">
   <div class="testimonial-container">
     {% for item in page.testimonials.testimonials %}
     <div class="testimonial-item text-center lg:w-[80%] mx-auto">

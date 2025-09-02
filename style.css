@@ -60,6 +60,7 @@ font-family: ibarra-real-nova, serif; 400, 700
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
 @layer components {
+
     /* Padding */
     .section-padding {
         @apply py-20 lg:py-28 px-8 lg:px-20
@@ -240,6 +241,16 @@ font-family: ibarra-real-nova, serif; 400, 700
     .mobile-menu a:hover {
         color: var(--featured);
     }
+
+    /* Slick */
+    ul.slick-dots li button::before { color: var(--featured); opacity: .25 !important; }
+    ul.slick-dots li button:hover::before { color: var(--featured); opacity: .5 !important; }
+    ul.slick-dots li.slick-active button::before { color: var(--featured); opacity: .75 !important; }
+
+
+
+
+
 
     /* Forms */
     .focus-main {

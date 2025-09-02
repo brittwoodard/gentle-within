@@ -670,6 +670,7 @@ li::marker {
 .mobile-menu a:hover {
         color: var(--featured);
     }
+/* Slick */
 /* Forms */
 .focus-main:focus {
   outline: 2px solid transparent;
@@ -935,10 +936,6 @@ li::marker {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
-.bg-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(102 118 108 / var(--tw-bg-opacity));
-}
 .bg-light {
   --tw-bg-opacity: 1;
   background-color: rgb(242 242 240 / var(--tw-bg-opacity));
@@ -946,6 +943,10 @@ li::marker {
 .bg-main {
   --tw-bg-opacity: 1;
   background-color: rgb(207 209 198 / var(--tw-bg-opacity));
+}
+.bg-midnight {
+  --tw-bg-opacity: 1;
+  background-color: rgb(58 61 59 / var(--tw-bg-opacity));
 }
 .bg-transparent {
   background-color: transparent;
@@ -1058,6 +1059,10 @@ li::marker {
 .text-feature {
   --tw-text-opacity: 1;
   color: rgb(179 123 100 / var(--tw-text-opacity));
+}
+.text-light {
+  --tw-text-opacity: 1;
+  color: rgb(242 242 240 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;

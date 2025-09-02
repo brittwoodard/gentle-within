@@ -61,7 +61,7 @@ faq:
      answer_html: |
        <p>Head over to the Contact page to reach out. Let me know which service you're interested in, and I’ll follow up with next steps or a link to book a free consultation call.</p>
 cta: 
-  heading_html: Reading to bring <em>care</em> into the heart of your work?
+  heading_html: Ready to bring <em>care</em> into the heart of your work?
   description_html: |
     <p>Let’s explore how your organization can deepen its commitment to wellness, equity, and sustainable impact. This work begins with conversation, grounded in relationship, curiosity, and shared purpose. Submit an inquiry to get started, and we’ll move forward together from there.</p>
   button: 

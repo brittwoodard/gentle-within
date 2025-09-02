@@ -69,7 +69,7 @@ cta:
   button: 
     text: Schedule a free consultation
     url: /discover
-  image_path: /uploads/temporary-illustration.png
+  image_path: /uploads/gentle-within-17.png
 seo: 
   hide-from-googe: true
 ---

@@ -16,9 +16,9 @@ timezone: America/New_York
 
 author:
   name: Gentle Within
-  url: https://www.gentlewithin.com
+  url: "https://www.gentlewithin.com"
 
-logo: {{ site.site-settings.brand.primary_logo_path }}
+logo: "/uploads/gentle-within-17.png"
 social:
   name: Gentle Within
   links:

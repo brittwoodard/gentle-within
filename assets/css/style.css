@@ -829,6 +829,12 @@ li::marker {
 .mt-8 {
   margin-top: 2rem;
 }
+.mr-4 {
+  margin-right: 1rem;
+}
+.ml-2 {
+  margin-left: 0.5rem;
+}
 .block {
   display: block;
 }
@@ -859,14 +865,14 @@ li::marker {
 .h-\[50vh\] {
   height: 50vh;
 }
+.h-\[70vh\] {
+  height: 70vh;
+}
 .h-\[80vh\] {
   height: 80vh;
 }
 .h-full {
   height: 100%;
-}
-.h-screen {
-  height: 100vh;
 }
 .min-h-\[30vh\] {
   min-height: 30vh;
@@ -891,6 +897,15 @@ li::marker {
 }
 .min-h-\[70vh\] {
   min-height: 70vh;
+}
+.min-h-\[80vh\] {
+  min-height: 80vh;
+}
+.min-h-\[82vh\] {
+  min-height: 82vh;
+}
+.min-h-\[83vh\] {
+  min-height: 83vh;
 }
 .w-11\/12 {
   width: 91.666667%;
@@ -1140,6 +1155,10 @@ li::marker {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-main {
+  --tw-text-opacity: 1;
+  color: rgb(207 209 198 / var(--tw-text-opacity));
 }
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);

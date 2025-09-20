@@ -13,12 +13,12 @@ links:
     url: /contact.html
 ---
 
-<section class="flex justify-center justify-items-center text-center items-center h-screen">
+<section class="flex justify-center justify-items-center text-center items-center min-h-[82vh] px-8">
 
     <div>
-        <h1 class="text-2xl mb-8">{{page.heading}}</h1>
+        <h1 class="text-2xl mb-4 font-serif text-dark">{{page.heading}}</h1>
         <p>{{page.description_html}}</p>
-        <a href="{{page.links.link_1.url}}" class="link">{{page.links.link_1.title}}</a>
-        <a href="{{page.links.link_2.url}}" class="link">{{page.links.link_2.title}}</a>
+        <a href="{{page.links.link_1.url}}" class="link mr-2">{{page.links.link_1.title}}</a>
+        <a href="{{page.links.link_2.url}}" class="link ml-2">{{page.links.link_2.title}}</a>
     </div>
 </section>

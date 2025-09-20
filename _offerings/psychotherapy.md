@@ -1,6 +1,9 @@
 ---
 layout: offering
 slug: psychotherapy
+title: Psychotherapy Sessions | Gentle Within
+description: Somatic, relational, and liberation-based psychotherapy for teens, adults, and couples. Trauma-informed care for anxiety, trauma, identity, and relationships in NY & NJ.
+image: /uploads/gentle-within-4.jpg
 header: 
   title_html: <em>Psychotherapy</em> Sessions
   description_html: |
@@ -71,5 +74,8 @@ cta:
     url: /discover
   image_path: /uploads/gentle-within-17.png
 seo: 
-  hide-from-googe: true
+  title: Psychotherapy Sessions | Gentle Within
+  description: Somatic, relational, and liberation-based psychotherapy for teens, adults, and couples. Trauma-informed care for anxiety, trauma, identity, and relationships in NY & NJ.
+  social_image: /uploads/gentle-within-4.jpg
+  hide-from-google: true
 ---

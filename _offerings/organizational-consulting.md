@@ -1,6 +1,9 @@
 ---
 layout: offering
 slug: organizational-consulting
+title: Organizational Consulting | Gentle Within
+description: Trauma-informed, justice-centered consulting for schools, nonprofits, and mission-driven orgs—policies, curricula, and wellness programs that support staff and community well-being.
+image: /uploads/gentle-within-10.jpg
 header: 
   title_html: Organizational <em>Consulting</em>
   description_html: |
@@ -68,6 +71,9 @@ cta:
     text: Submit an Inquiry
     url: /discover
   image_path: /uploads/gentle-within-15.png
-seo: 
-  hide-from-googe: true
+seo:
+  title: Organizational Consulting | Gentle Within
+  description: Trauma-informed, justice-centered consulting for schools, nonprofits, and mission-driven orgs—policies, curricula, and wellness programs that support staff and community well-being.
+  social_image: /uploads/gentle-within-10.jpg
+  hide-from-google: true
 ---

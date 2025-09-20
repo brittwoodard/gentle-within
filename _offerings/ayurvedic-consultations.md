@@ -1,6 +1,9 @@
 ---
 layout: offering
 slug: ayurvedic-consultations
+title: Ayurvedic Consultations | Gentle Within
+description: One-on-one Ayurvedic consultations to understand your dosha, find balance, and build supportive daily rituals. Sliding scale student sessions.
+image: /uploads/gentle-within-9.jpg
 header: 
   title_html: <em>Ayurvedic</em> Consultations
   description_html: |
@@ -69,6 +72,9 @@ cta:
     text: Schedule a free consultation
     url: /discover
   image_path: /uploads/gentle-within-16.png
-seo: 
-  hide-from-googe: true
+seo:
+  title: Ayurvedic Consultations | Gentle Within
+  description: One-on-one Ayurvedic consultations to understand your dosha, find balance, and build supportive daily rituals. Sliding scale student sessions.
+  social_image: /uploads/gentle-within-9.jpg
+  hide-from-google: true
 ---

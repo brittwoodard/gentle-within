@@ -20,7 +20,7 @@ social:
   tiktok_username:
   youtube_username:
 brand:
-  primary_logo_path: /uploads/gentle-within-17.png
+  primary_logo_path: "/uploads/gentle-within-17.png"
   secondary_logo_path:
   submark_logo_path:
 technical:

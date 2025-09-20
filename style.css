@@ -75,6 +75,10 @@ font-family: ibarra-real-nova, serif; 400, 700
         @apply bg-feature/75 transition duration-500
     }
 
+    .button-cookies {
+        @apply bg-feature text-white py-2 px-4 inline-block tracking-wider text-sm font-serif hover:bg-feature/75 hover:transition hover:duration-500 mt-4
+    }
+
     .link {
         @apply lowercase mb-2 border-b border-feature text-feature
     }

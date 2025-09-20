@@ -8,7 +8,7 @@ header:
   - title: Contact
     url: /contact
   - title: Book a Discovery Call
-    url: https://amy-b-pichardo.clientsecure.me/contact-widget
+    url: /discover
 footer:
   pages: 
    - title: About

@@ -1,0 +1,27 @@
+---
+layout: default
+title: Thank you. We’ve received your message
+heading: Thank you. We’ve received your message
+description_html: |
+  <p>Thank you for reaching out. I’m glad you took this step to connect.</p>
+  <p>I’ll review what you shared and reach out within 1-2 business days to schedule your free 30-minute discovery call. This call is our chance to explore your needs, hear your questions, and decide together whether working together feels like the right fit.</p>
+  <p>In the meantime, if you’re in crisis or need immediate help, please call 911 (if you’re in the U.S.) or your local emergency services. If you’re in the U.S., you can also contact the National Suicide Prevention Lifeline at 988.</p>
+  <p>I look forward to connecting with you.</p>
+links: 
+  link_1: 
+    title: Home
+    url: /index.html
+  link_2: 
+    title: Contact
+    url: /contact.html
+---
+
+<section class="flex justify-center justify-items-center text-center items-center min-h-[82vh] px-8">
+
+    <div class="lg:w-[80%] mx-auto">
+        <h1 class="text-2xl mb-4 font-serif text-dark">{{page.heading}}</h1>
+        <p>{{page.description_html}}</p>
+        <a href="{{page.links.link_1.url}}" class="link mr-2">{{page.links.link_1.title}}</a>
+        <a href="{{page.links.link_2.url}}" class="link ml-2">{{page.links.link_2.title}}</a>
+    </div>
+</section>

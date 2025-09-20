@@ -3,6 +3,29 @@ collections:
     output: true
     permalink: /:slug
 
-
 # Enable LiveReload
 livereload: true
+
+# Site settings
+title: Gentle Within
+description: Trauma-informed somatic therapy and mindful movement in New York
+url: "https://www.gentlewithin.com"  
+baseurl: ""  # leave empty if site is served at domain root
+lang: en
+timezone: America/New_York
+
+author:
+  name: Gentle Within
+  url: https://www.gentlewithin.com
+
+logo: {{ site.site-settings.brand.primary_logo_path }}
+social:
+  name: Gentle Within
+  links:
+    - https://www.instagram.com/{{ site.site-settings.social.instagram_username }}
+    - https://www.linkedin.com/{{ site.site-settings.social.linkedin_username }}
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
